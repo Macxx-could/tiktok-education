@@ -9,7 +9,7 @@
 .nav-item-icon {
     width: 165rpx;
     height: 165rpx;
-    margin-bottom: 15rpx;
+    margin-bottom: 10rpx;
 }
 .nav-item-text{
     font-size: 24rpx;
