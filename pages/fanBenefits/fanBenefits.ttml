@@ -2,4 +2,5 @@
     <!--Banner图区域-->
     <image src='/images/banner.jpg' mode='widthFix' class='response'></image>
     <!--    企业介绍/课程介绍/企业实战/学员成果-->
+    <navBar></navBar>
 </scroll-view>

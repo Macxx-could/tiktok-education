@@ -1,0 +1,4 @@
+<!-- components/navBar/index/index.wxml -->
+<view class="nav-bar-container">
+    <navItem tt:for="{{navList}}" icon="{{item.icon}}" text="{{item.text}}"></navItem>
+</view>

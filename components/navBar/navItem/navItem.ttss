@@ -1,0 +1,16 @@
+/* components/navBar/navItem/navItem.ttss */
+.nav-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.nav-item-icon {
+    width: 165rpx;
+    height: 165rpx;
+    margin-bottom: 15rpx;
+}
+.nav-item-text{
+    font-size: 24rpx;
+}

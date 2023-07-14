@@ -4,5 +4,6 @@
   "backgroundColorTop": "#ffffff",
   "backgroundColorBottom": "#ffffff",
   "usingComponents": {
+    "navBar": "/components/navBar/index/index"
   }
 }

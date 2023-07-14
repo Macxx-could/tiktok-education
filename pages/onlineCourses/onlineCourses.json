@@ -1,8 +1,1 @@
-{
-  "component": true,
-  "backgroundColor": "#ffffff",
-  "backgroundColorTop": "#ffffff",
-  "backgroundColorBottom": "#ffffff",
-  "usingComponents": {
-  }
-}
+{"component":true,"backgroundColor":"#ffffff","backgroundColorTop":"#ffffff","backgroundColorBottom":"#ffffff","usingComponents":{}}
