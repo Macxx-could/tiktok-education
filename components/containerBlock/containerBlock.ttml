@@ -1,0 +1,13 @@
+<!-- components/containerBlock/containerBlock.wxml -->
+<view class="container-block">
+    <view class="container-header">
+        <text class="title">{{title}}</text>
+        <text class="more-text text-gray">
+            <text>更多</text>
+            <text class="cuIcon-right lg "></text>
+        </text>
+    </view>
+    <view class="container-body">
+        <slot></slot>
+    </view>
+</view>

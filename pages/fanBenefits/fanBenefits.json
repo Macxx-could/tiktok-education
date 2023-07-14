@@ -4,6 +4,7 @@
   "backgroundColorTop": "#ffffff",
   "backgroundColorBottom": "#ffffff",
   "usingComponents": {
-    "navBar": "/components/navBar/index/index"
+    "navBar": "/components/navBar/index/index",
+    "containerBlock": "/components/containerBlock/containerBlock"
   }
 }

@@ -1,0 +1,20 @@
+/* components/containerBlock/containerBlock.ttss */
+.container-block{
+    padding: 0 30rpx;
+}
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-body{
+    margin-top: 30rpx;
+    position: relative;
+}
+.title{
+    font-weight: bold;
+}
+.more-text{
+    display: flex;
+    align-items: center;
+}

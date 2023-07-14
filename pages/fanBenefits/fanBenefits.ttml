@@ -3,4 +3,8 @@
     <image src='/images/banner.jpg' mode='widthFix' class='response'></image>
     <!--    企业介绍/课程介绍/企业实战/学员成果-->
     <navBar></navBar>
+    <!--  学员/员工日常活动  -->
+    <containerBlock title="学员/员工日常活动">
+111
+    </containerBlock>
 </scroll-view>
