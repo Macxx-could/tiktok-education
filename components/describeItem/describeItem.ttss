@@ -1,0 +1,22 @@
+.describe-item{
+    padding-bottom: 20rpx;
+    border-bottom: 1px solid #eee;
+}
+.describe-image {
+    width: 330rpx;
+}
+.describe-title{
+    display: block;
+    font-weight: bold;
+    font-size: 22rpx;
+    margin: 15rpx 0;
+}
+.describe-content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3; /* 控制显示的行数 */
+    font-size: 20rpx;
+    width: 330rpx
+}
