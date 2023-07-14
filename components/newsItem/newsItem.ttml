@@ -1,0 +1,10 @@
+<view class="news-item">
+    <view class="news-image-container">
+        <image src="/images/{{item.img}}.jpg" class="news-image"></image>
+    </view>
+    <view class="news-content-container">
+        <view class="news-title text-cut" style="width: 400rpx;">{{item.title}}这是一个超级我i倒是回答就看撒是结婚打算空间的哈萨克结婚的看</view>
+        <view class="news-date">{{item.date}}</view>
+        <view class="news-content">{{item.content}}</view>
+    </view>
+</view>

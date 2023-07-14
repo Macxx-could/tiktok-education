@@ -4,11 +4,17 @@
     <!--    企业介绍/课程介绍/企业实战/学员成果-->
     <navBar></navBar>
     <!--  学员/员工日常活动  -->
-    <containerBlock title="学员/员工日常活动">
-        <view class="activity-group">
-            <activityItem tt:for="{{activities}}" img="{{item.img}}" name="{{item.name}}"></activityItem>
+<!--    <containerBlock title="学员/员工日常活动">-->
+<!--        <view class="activity-group">-->
+<!--            <activityItem tt:for="{{activities}}" img="{{item.img}}" name="{{item.name}}"></activityItem>-->
+<!--        </view>-->
+<!--    </containerBlock>-->
+    <!--    公司对外合作动态/新闻-->
+    <containerBlock title="公司对外合作动态/新闻">
+        <view class="news-group">
+            <newsItem tt:for="{{news}}" item="{{item}}"></newsItem>
         </view>
     </containerBlock>
-<!--    底部占位-->
+    <!--    底部占位-->
     <view style="min-height: 150rpx;background-color:#fff;"></view>
 </scroll-view>

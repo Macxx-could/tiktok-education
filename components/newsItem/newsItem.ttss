@@ -1,0 +1,43 @@
+.news-item {
+    padding: 20rpx 0;
+    border-bottom: 2px dashed #eee;
+    display: flex;
+}
+
+.news-image-container {
+    flex-shrink: 0;
+    padding: 10rpx 15rpx;
+    border-radius: 5rpx;
+    border: 1rpx solid #eee;
+    width: 257rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-image {
+    width: 227rpx;
+    height: 169rpx;
+}
+
+.news-content-container {
+    flex: 1;
+    padding: 15rpx;
+}
+.news-title{
+    font-weight: bold;
+    font-size: 26rpx;
+}
+.news-date{
+    color: #999;
+    font-size: 16rpx;
+    margin: 15rpx 0;
+}
+.news-content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3; /* 控制显示的行数 */
+    font-size: 20rpx;
+}
