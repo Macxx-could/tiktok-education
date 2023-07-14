@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "fanBenefits": "/pages/fanBenefits/fanBenefits",
+        "onlineCourses": "/pages/onlineCourses/onlineCourses",
+        "personalCenter": "/pages/personalCenter/personalCenter"
+    }
+}

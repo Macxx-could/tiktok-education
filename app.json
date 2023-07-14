@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/fanBenefits/fanBenefits",
+    "pages/onlineCourses/onlineCourses",
+    "pages/personalCenter/personalCenter"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "十方明亮",
+    "navigationBarTextStyle": "black"
+  }
+}
