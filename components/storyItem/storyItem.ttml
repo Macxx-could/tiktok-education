@@ -1,0 +1,9 @@
+<view class="story-item">
+    <image src="/images/{{story.img}}.jpg" class="story-image" mode='widthFix'></image>
+    <view class="brand">{{story.brand}}</view>
+    <view class="founder">{{story.founder}}</view>
+    <view class="story-title">创始人故事</view>
+    <view class="story-content">{{story.founderStory}}</view>
+    <view class="story-title">品牌故事</view>
+    <view class="story-content">{{story.brandStory}}</view>
+</view>

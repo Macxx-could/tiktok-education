@@ -8,6 +8,7 @@
     "containerBlock": "/components/containerBlock/containerBlock",
     "activityItem": "/components/activityItem/activityItem",
     "newsItem": "/components/newsItem/newsItem",
-    "describeItem": "/components/describeItem/describeItem"
+    "describeItem": "/components/describeItem/describeItem",
+    "storyItem": "/components/storyItem/storyItem"
   }
 }

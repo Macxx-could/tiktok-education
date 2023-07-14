@@ -16,10 +16,16 @@
     <!--        </view>-->
     <!--    </containerBlock>-->
     <!--    行业前景确认-->
-    <containerBlock title="行业前景确认">
-        <view class="industry-prospects-group">
-            <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.content}}"
-                          img="{{item.img}}"></describeItem>
+    <!--    <containerBlock title="行业前景确认">-->
+    <!--        <view class="industry-prospects-group">-->
+    <!--            <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.content}}"-->
+    <!--                          img="{{item.img}}"></describeItem>-->
+    <!--        </view>-->
+    <!--    </containerBlock>-->
+    <!--    创始人故事/品牌故事-->
+    <containerBlock title="创始人故事/品牌故事">
+        <view class="story-group">
+            <storyItem tt:for="{{stories}}" story="{{item}}"></storyItem>
         </view>
     </containerBlock>
     <!--    底部占位-->

@@ -1,0 +1,23 @@
+.story-image {
+    width: 100%;
+    border-radius: 10rpx;
+    margin-bottom: 30rpx;
+}
+
+.story-item > view {
+    margin: 15rpx 0;
+}
+
+.brand, .founder, .story-title {
+    font-weight: bold;
+    font-size: 22rpx;
+}
+.story-content{
+    font-size: 20rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5; /* 控制显示的行数 */
+    width: 100%;
+}
