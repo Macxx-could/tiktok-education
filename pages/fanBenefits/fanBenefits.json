@@ -5,6 +5,7 @@
   "backgroundColorBottom": "#ffffff",
   "usingComponents": {
     "navBar": "/components/navBar/index/index",
-    "containerBlock": "/components/containerBlock/containerBlock"
+    "containerBlock": "/components/containerBlock/containerBlock",
+    "activityItem": "/components/activityItem/activityItem"
   }
 }

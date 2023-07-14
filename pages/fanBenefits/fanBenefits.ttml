@@ -5,6 +5,10 @@
     <navBar></navBar>
     <!--  学员/员工日常活动  -->
     <containerBlock title="学员/员工日常活动">
-111
+        <view class="activity-group">
+            <activityItem tt:for="{{activities}}" img="{{item.img}}" name="{{item.name}}"></activityItem>
+        </view>
     </containerBlock>
+<!--    底部占位-->
+    <view style="min-height: 150rpx;background-color:#fff;"></view>
 </scroll-view>

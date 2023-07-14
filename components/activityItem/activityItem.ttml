@@ -1,0 +1,4 @@
+<view class="activity-item">
+    <image src='/images/{{img}}.jpg' mode='widthFix' class="activity-img"></image>
+    <text class="activity-name">{{name}}</text>
+</view>

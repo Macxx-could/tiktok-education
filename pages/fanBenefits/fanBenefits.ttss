@@ -1,1 +1,9 @@
 /* pages/fanBenefits.ttss */
+.activity-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15rpx;
+    row-gap: 25rpx;
+    justify-items: center;
+    align-items: center;
+}

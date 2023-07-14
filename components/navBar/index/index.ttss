@@ -1,8 +1,9 @@
 /* components/navBar/index/index.ttss */
-.nav-bar-container{
-    margin: 30rpx 0;
-    padding: 15rpx 30rpx;
+.nav-bar-container {
+    /*margin: 30rpx 0;*/
+    padding: 45rpx 30rpx 20rpx 30rpx;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #fff;
 }

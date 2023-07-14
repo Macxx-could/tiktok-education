@@ -1,0 +1,15 @@
+/* components/activityItem/activityItem.ttss */
+.activity-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.activity-img{
+    width: 210rpx;
+    height: auto;
+}
+.activity-name{
+    margin-top: 15rpx;
+    font-size: 24rpx;
+}

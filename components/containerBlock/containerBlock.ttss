@@ -1,6 +1,8 @@
 /* components/containerBlock/containerBlock.ttss */
 .container-block{
-    padding: 0 30rpx;
+    padding:  30rpx;
+    background-color: #fff;
+    margin-top: 30rpx;
 }
 .container-header{
     display: flex;
