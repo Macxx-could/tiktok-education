@@ -1,7 +1,7 @@
 .story-image {
     width: 100%;
     border-radius: 10rpx;
-    margin-bottom: 30rpx;
+    margin-bottom: 15rpx;
 }
 
 .story-item > view {
@@ -10,7 +10,7 @@
 
 .brand, .founder, .story-title {
     font-weight: bold;
-    font-size: 22rpx;
+    font-size: 24rpx;
 }
 .story-content{
     font-size: 20rpx;
