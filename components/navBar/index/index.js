@@ -7,7 +7,7 @@ Component({
         navList: [
             {icon: "y1", text: "企业介绍"},
             {icon: "y2", text: "课程介绍"},
-            {icon: "y3", text: "企业实览"},
+            {icon: "y3", text: "线上课程"},
             {icon: "y4", text: "学员成果"},
         ]
     },
