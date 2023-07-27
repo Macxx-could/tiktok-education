@@ -1,2 +1,17 @@
-<!-- pages/personalCenter.wxml -->
-<text> pages/personalCenter.wxml </text>
+<view class="personal-center-page">
+    <view class="header">
+        <image src='/images/headPortrait.png' mode='widthFix' class='head-portrait'></image>
+        <view class="person-base-info">
+            <text class="nick-name">100年码农</text>
+        </view>
+    </view>
+    <view class="neck-group">
+        <view class="neck-item">
+            <view class="neck-item__left">
+                <image src='/images/customer-icon.png' mode='widthFix' class='customer-icon'></image>
+                <text class="left-desc-text">客服入口</text>
+            </view>
+            <text class="cuIcon-right lg text-gray"></text>
+        </view>
+    </view>
+</view>

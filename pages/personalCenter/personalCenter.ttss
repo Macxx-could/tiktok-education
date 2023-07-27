@@ -1,1 +1,46 @@
 /* pages/personalCenter.ttss */
+.personal-center-page {
+    padding: 30rpx;
+}
+.header{
+    display: flex;
+    margin-bottom: 30rpx;
+}
+.head-portrait {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 10rpx;
+    margin-right: 30rpx;
+}
+
+.person-base-info {
+    flex: 1;
+    display: flex;
+}
+.neck-group{
+    border-top: 20rpx solid #ededed;
+    border-bottom: 20rpx solid #ededed;
+    padding: 20rpx;
+}
+.nick-name {
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.neck-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.neck-item__left{
+    display: flex;
+    align-items: center;
+}
+.customer-icon{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 20rpx;
+}
+.left-desc-text{
+    font-weight: bold;
+    font-size: 22rpx;
+}
