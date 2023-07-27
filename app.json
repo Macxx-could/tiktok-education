@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/newsList/newsList",
     "pages/index/index",
     "pages/home/home",
     "pages/fanBenefits/fanBenefits",

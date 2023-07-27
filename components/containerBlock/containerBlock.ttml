@@ -2,7 +2,7 @@
 <view class="container-block">
     <view class="container-header">
         <text class="title">{{title}}</text>
-        <text class="more-text text-gray">
+        <text class="more-text text-gray" data-title="{{title}}" bindtap="clickMoreText">
             <text>更多</text>
             <text class="cuIcon-right lg "></text>
         </text>
