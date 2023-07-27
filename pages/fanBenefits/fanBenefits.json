@@ -4,11 +4,6 @@
   "backgroundColorTop": "#ffffff",
   "backgroundColorBottom": "#ffffff",
   "usingComponents": {
-    "navBar": "/components/navBar/index/index",
-    "containerBlock": "/components/containerBlock/containerBlock",
-    "activityItem": "/components/activityItem/activityItem",
-    "newsItem": "/components/newsItem/newsItem",
-    "describeItem": "/components/describeItem/describeItem",
-    "storyItem": "/components/storyItem/storyItem"
+
   }
 }
