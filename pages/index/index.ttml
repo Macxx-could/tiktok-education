@@ -1,3 +1,4 @@
+<home tt:if="{{PageCur=='首页'}}"></home>
 <fanBenefits tt:if="{{PageCur=='粉丝福利'}}"></fanBenefits>
 <onlineCourses tt:if="{{PageCur=='线上课程'}}"></onlineCourses>
 <personalCenter tt:if="{{PageCur=='个人中心'}}"></personalCenter>

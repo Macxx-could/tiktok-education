@@ -1,29 +1,34 @@
-<fanBenefits tt:if="{{PageCur=='粉丝福利'}}"></fanBenefits>
-<onlineCourses tt:if="{{PageCur=='线上课程'}}"></onlineCourses>
-<personalCenter tt:if="{{PageCur=='个人中心'}}"></personalCenter>
-<view class="cu-bar tabbar bg-white shadow foot">
-    <view class="action" bindtap="NavChange" data-cur="首页">
-        <view class='cuIcon-cu-image'>
-            <image src="/images/forleft{{PageCur=='首页'?'-1':''}}.png"></image>
+<scroll-view scroll-y class="scrollPage fan-benefits-page">
+    <!--Banner图区域-->
+    <image src='/images/banner.jpg' mode='widthFix' class='response'></image>
+    <image src='/images/logo.png' mode='widthFix' class='logo'></image>
+    <!--    企业介绍/课程介绍/企业实战/学员成果-->
+    <navBar></navBar>
+    <!--  学员/员工日常活动  -->
+    <containerBlock title="学员/员工日常活动">
+        <view class="activity-group">
+            <activityItem tt:for="{{activities}}" img="{{item.img}}" name="{{item.name}}"></activityItem>
         </view>
-        <view class="{{PageCur=='首页'?'active-bar-text':''}}">首页</view>
-    </view>
-    <view class="action" bindtap="NavChange" data-cur="粉丝福利">
-        <view class='cuIcon-cu-image'>
-            <image src="/images/forleft{{PageCur=='粉丝福利'?'-1':''}}.png"></image>
+    </containerBlock>
+    <!--    公司对外合作动态/新闻-->
+    <containerBlock title="公司对外合作动态/新闻">
+        <view class="news-group">
+            <newsItem tt:for="{{news}}" item="{{item}}"></newsItem>
         </view>
-        <view class="{{PageCur=='粉丝福利'?'active-bar-text':''}}">粉丝福利</view>
-    </view>
-    <view class="action" bindtap="NavChange" data-cur="线上课程">
-        <view class='cuIcon-cu-image'>
-            <image src="/images/forcenter{{PageCur=='线上课程'?'-1':''}}.png"></image>
+    </containerBlock>
+    <!--    行业前景确认-->
+    <containerBlock title="行业前景确认">
+        <view class="industry-prospects-group">
+            <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.content}}"
+                          img="{{item.img}}"></describeItem>
         </view>
-        <view class="{{PageCur=='线上课程'?'active-bar-text':''}}">线上课程</view>
-    </view>
-    <view class="action" bindtap="NavChange" data-cur="个人中心">
-        <view class='cuIcon-cu-image'>
-            <image src="/images/forright{{PageCur=='个人中心'?'-1':''}}.png"></image>
+    </containerBlock>
+    <!--    创始人故事/品牌故事-->
+    <containerBlock title="创始人故事/品牌故事">
+        <view class="story-group">
+            <storyItem tt:for="{{stories}}" story="{{item}}"></storyItem>
         </view>
-        <view class="{{PageCur=='个人中心'?'active-bar-text':''}}">个人中心</view>
-    </view>
-</view>
+    </containerBlock>
+    <!--    底部占位-->
+    <view style="min-height: 150rpx;background-color:#fff;"></view>
+</scroll-view>

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "home": "/pages/home/home",
     "fanBenefits": "/pages/fanBenefits/fanBenefits",
     "onlineCourses": "/pages/onlineCourses/onlineCourses",
     "personalCenter": "/pages/personalCenter/personalCenter"

@@ -1,7 +1,14 @@
 {
+  "component": true,
+  "backgroundColor": "#ffffff",
+  "backgroundColorTop": "#ffffff",
+  "backgroundColorBottom": "#ffffff",
   "usingComponents": {
-    "fanBenefits": "/pages/fanBenefits/fanBenefits",
-    "onlineCourses": "/pages/onlineCourses/onlineCourses",
-    "personalCenter": "/pages/personalCenter/personalCenter"
+    "navBar": "/components/navBar/index/index",
+    "containerBlock": "/components/containerBlock/containerBlock",
+    "activityItem": "/components/activityItem/activityItem",
+    "newsItem": "/components/newsItem/newsItem",
+    "describeItem": "/components/describeItem/describeItem",
+    "storyItem": "/components/storyItem/storyItem"
   }
 }
