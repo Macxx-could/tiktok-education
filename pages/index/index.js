@@ -1,10 +1,14 @@
 const app = getApp();
 
 Page({
-  data: {
-
-  },
-  onLoad: function () {
-    console.log('Welcome to Mini Code');
-  }
+    data: {
+        PageCur: '粉丝福利'
+    },
+    NavChange(e) {
+        this.setData({
+            PageCur: e.currentTarget.dataset.cur
+        });
+    },
+    onLoad: function (options) {
+    }
 });

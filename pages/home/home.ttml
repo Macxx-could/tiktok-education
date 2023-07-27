@@ -2,6 +2,12 @@
 <onlineCourses tt:if="{{PageCur=='线上课程'}}"></onlineCourses>
 <personalCenter tt:if="{{PageCur=='个人中心'}}"></personalCenter>
 <view class="cu-bar tabbar bg-white shadow foot">
+    <view class="action" bindtap="NavChange" data-cur="首页">
+        <view class='cuIcon-cu-image'>
+            <image src="/images/forleft{{PageCur=='首页'?'-1':''}}.png"></image>
+        </view>
+        <view class="{{PageCur=='首页'?'active-bar-text':''}}">首页</view>
+    </view>
     <view class="action" bindtap="NavChange" data-cur="粉丝福利">
         <view class='cuIcon-cu-image'>
             <image src="/images/forleft{{PageCur=='粉丝福利'?'-1':''}}.png"></image>
