@@ -1,0 +1,14 @@
+.notice-comp {
+    padding: 20rpx 30rpx 0 30rpx;
+    display: flex;
+    align-items: center;
+}
+
+.icon-color {
+    color: #0000de;
+    margin-right: 20rpx;
+}
+.notification-item{
+    font-size: 20rpx;
+    font-weight: bold;
+}

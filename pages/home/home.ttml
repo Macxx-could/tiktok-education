@@ -2,6 +2,8 @@
     <!--Banner图区域-->
     <image src='/images/banner.jpg' mode='widthFix' class='response'></image>
     <image src='/images/logo.png' mode='widthFix' class='logo'></image>
+    <!--    通知-->
+    <notice></notice>
     <!--    企业介绍/课程介绍/企业实战/学员成果-->
     <navBar></navBar>
     <!--  学员/员工日常活动  -->

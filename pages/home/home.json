@@ -4,6 +4,7 @@
   "backgroundColorTop": "#ffffff",
   "backgroundColorBottom": "#ffffff",
   "usingComponents": {
+    "notice": "/components/notice/notice",
     "navBar": "/components/navBar/index/index",
     "containerBlock": "/components/containerBlock/containerBlock",
     "activityItem": "/components/activityItem/activityItem",
