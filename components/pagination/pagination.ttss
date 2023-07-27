@@ -1,0 +1,35 @@
+/* components/pagination/pagination.ttss */
+.pagination {
+    display: flex;
+}
+
+.page-numbers {
+    flex: 1;
+    display: flex;
+}
+
+button {
+    padding: 0;
+    line-height: 0;
+    flex-shrink: 0;
+    width: 60rpx;
+    height: 60rpx;
+    font-size: 22rpx;
+    border-radius: 4rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5rpx;
+    background-color: #f0f2f5;
+    border: none;
+}
+
+button.active {
+    color: white;
+    background-color: #0000de;
+}
+
+button::after {
+    content: " ";
+    border: unset;
+}
