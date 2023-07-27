@@ -1,10 +1,11 @@
 /* pages/personalCenter.ttss */
 .personal-center-page {
-    padding: 30rpx;
+    /*padding: 30rpx;*/
 }
 .header{
     display: flex;
     margin-bottom: 30rpx;
+    padding: 30rpx;
 }
 .head-portrait {
     width: 130rpx;
