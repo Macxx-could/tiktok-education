@@ -1,3 +1,41 @@
-.fan-benefits-page{
+.fan-benefits-page {
     position: relative;
+    background-color: #fff;
+    padding: 30rpx;
+}
+
+.page-title {
+    font-weight: bold;
+    font-size: 35rpx;
+    display: block;
+}
+
+.desc-text{
+    display: block;
+    margin: 40rpx 0 50rpx 0;
+}
+
+.qr-code-box{
+    width: 300rpx;
+    height: 300rpx;
+    background-color: #c6c6c6;
+    margin: 0 auto 80rpx;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-group{
+    margin-top: 30rpx;
+}
+.benefit-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25rpx;
+}
+.benefit-item image{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 15rpx;
 }

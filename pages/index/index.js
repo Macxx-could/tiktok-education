@@ -2,7 +2,7 @@ const app = getApp();
 
 Page({
     data: {
-        PageCur: '首页'
+        PageCur: '粉丝福利'
     },
     NavChange(e) {
         this.setData({
