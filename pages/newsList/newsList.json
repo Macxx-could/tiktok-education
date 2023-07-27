@@ -2,6 +2,7 @@
   "backgroundColor": "#ffffff",
   "backgroundColorTop": "#ffffff",
   "backgroundColorBottom": "#ffffff",
+  "navigationBarTitleText": "公司对外合作动态/新闻",
   "usingComponents": {
     "newsItem": "/components/newsItem/newsItem",
     "pagination": "/components/pagination/pagination"
