@@ -3,5 +3,7 @@
   "backgroundColorTop": "#ffffff",
   "backgroundColorBottom": "#ffffff",
   "usingComponents": {
+    "newsItem": "/components/newsItem/newsItem",
+    "pagination": "/components/pagination/pagination"
   }
 }
