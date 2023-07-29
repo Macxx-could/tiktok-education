@@ -1,5 +1,5 @@
 <!-- components/navBar/navItem/navItem.wxml -->
-<view class="nav-item-container">
+<view class="nav-item-container" bindtap="clickItem">
     <image src='/images/{{icon}}.png' mode='widthFix' class="nav-item-icon"></image>
     <text class="nav-item-text">{{text}}</text>
 </view>

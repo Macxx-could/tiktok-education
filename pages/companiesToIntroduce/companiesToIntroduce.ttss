@@ -1,1 +1,28 @@
-/* pages/companiesToIntroduce/companiesToIntroduce.ttss */
+.company-introduce-page {
+    padding: 30rpx;
+}
+
+.block-title {
+    font-size: 30rpx;
+    font-weight: bold;
+    margin-bottom: 25rpx;
+}
+.video-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60rpx;
+}
+
+.video-item{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+.video-cover {
+    width: 220rpx;
+    height: 120rpx;
+    margin-bottom: 10rpx;
+}

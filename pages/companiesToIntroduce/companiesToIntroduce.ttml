@@ -1,2 +1,12 @@
-<!-- pages/companiesToIntroduce/companiesToIntroduce.wxml -->
-<text> pages/companiesToIntroduce/companiesToIntroduce.wxml </text>
+<scroll-view scroll-y class="scrollPage company-introduce-page">
+    <view class="block-title">企业宣传片</view>
+    <view class="video-group">
+        <view class="video-item" tt:for="{{videoList}}">
+            <image src='/images/video-cover-03.png' mode='widthFix' class='video-cover'></image>
+            <text class="video-title">{{item.title}}</text>
+        </view>
+    </view>
+    <view class="block-title">公司简介</view>
+    <view class="block-title">企业荣誉</view>
+    <view class="block-title">学习环境</view>
+</scroll-view>

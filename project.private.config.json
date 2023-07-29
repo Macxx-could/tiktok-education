@@ -1,13 +1,23 @@
 {
     "condition": {
         "miniprogram": {
-            "current": -1,
+            "current": 1690625539108,
             "list": [
                 {
                     "id": 1690623320452,
                     "name": "pages/newsContent/newsContent",
                     "pathName": "pages/newsContent/newsContent",
                     "query": "id=1",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code",
+                    "mockUpdateType": "Noupdate"
+                },
+                {
+                    "id": 1690625539108,
+                    "name": "pages/companiesToIntroduce/companiesToIntroduce",
+                    "pathName": "pages/companiesToIntroduce/companiesToIntroduce",
+                    "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",
                     "location": "qr_code",
