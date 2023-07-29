@@ -6,7 +6,8 @@
     "pages/fanBenefits/fanBenefits",
     "pages/onlineCourses/onlineCourses",
     "pages/personalCenter/personalCenter",
-    "pages/newsContent/newsContent"
+    "pages/newsContent/newsContent",
+    "pages/companiesToIntroduce/companiesToIntroduce"
   ],
   "window": {
     "backgroundTextStyle": "light",
