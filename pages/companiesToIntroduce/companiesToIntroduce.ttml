@@ -11,6 +11,20 @@
         <image src='/images/company-qt.png' mode='widthFix' class='company-qt'></image>
         <text>{{introduction.content}}</text>
     </view>
+    <view class="download-container">
+        <view class="download-item">
+            <text class="file-name">公司介绍文档1.ppt</text>
+            <image src='/images/download-01.png' mode='widthFix' class='download-icon'></image>
+        </view>
+        <view class="download-item">
+            <text class="file-name">公司的资料介绍文档二.ppt</text>
+            <image src='/images/download-02.png' mode='widthFix' class='download-icon'></image>
+        </view>
+        <view class="download-item">
+            <text class="file-name">公司的一些产品资料介绍文档.ppt</text>
+            <image src='/images/download-02.png' mode='widthFix' class='download-icon'></image>
+        </view>
+    </view>
     <view class="block-title">企业荣誉</view>
     <view class="block-title">学习环境</view>
 </scroll-view>

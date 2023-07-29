@@ -38,3 +38,16 @@
     border-radius: 10rpx;
     margin-bottom: 30rpx;
 }
+.download-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+.file-name{
+    display: inline-block;
+    margin-right: 10rpx;
+}
+.download-icon{
+    width: 45rpx;
+    margin-left: 20rpx;
+}
