@@ -26,5 +26,18 @@
         </view>
     </view>
     <view class="block-title">企业荣誉</view>
+    <view class="page-section">
+        <swiper easing-function="default" indicator-dots current="{{0}}" current-item-id="" previous-margin=""
+                next-margin="" display-multiple-items="{{1}}" autoplay interval="{{2000}}" circular duration="{{500}}"
+                bindanimationfinish="animationFinish" bindtransition="transition">
+            <block tt:for="{{honor}}">
+                <swiper-item class="swiper-item">
+                    <image src='/images/certificate.png' mode='heightFix' class='certificate'></image>
+                    <image src='/images/certificate.png' mode='heightFix' class='certificate'></image>
+                    <image src='/images/certificate.png' mode='heightFix' class='certificate'></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
     <view class="block-title">学习环境</view>
 </scroll-view>

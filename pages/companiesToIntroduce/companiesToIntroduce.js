@@ -14,7 +14,9 @@ Page({
         // 公司简介
         introduction: {
             content: '公司简介文案'.repeat(100)
-        }
+        },
+        // 企业荣誉
+        honor: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
     },
 
     /**
@@ -23,5 +25,10 @@ Page({
     onLoad: function (options) {
 
     },
-
+    animationFinish(e) {
+        console.log(e.detail);
+    },
+    transition(e) {
+        console.log(e.detail);
+    }
 })

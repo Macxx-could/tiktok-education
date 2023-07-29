@@ -51,3 +51,15 @@
     width: 45rpx;
     margin-left: 20rpx;
 }
+
+.swiper-item{
+    display: flex;
+    height: 170px;
+}
+
+.certificate{
+    margin: 0 auto;
+}
+.page-section{
+    margin-bottom: 60rpx;
+}
