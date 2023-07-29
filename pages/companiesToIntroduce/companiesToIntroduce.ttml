@@ -40,4 +40,12 @@
         </swiper>
     </view>
     <view class="block-title">学习环境</view>
+    <view class=" study-environment">
+        <block tt:for="{{environment}}">
+            <view class="image-item">
+                <image src='/images/{{item.img}}.png' mode='widthFix'></image>
+                <text class="image-name">{{item.name}}</text>
+            </view>
+        </block>
+    </view>
 </scroll-view>

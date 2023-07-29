@@ -63,3 +63,23 @@
 .page-section{
     margin-bottom: 60rpx;
 }
+.study-environment{
+    margin-bottom: 60rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-item{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.image-item > image{
+    width: 220rpx;
+    height: 120rpx;
+    margin-bottom: 10rpx;
+}
+.image-name{
+    font-size: 20rpx;
+}
