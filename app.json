@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/newsList/newsList",
     "pages/index/index",
+    "pages/newsList/newsList",
     "pages/home/home",
     "pages/fanBenefits/fanBenefits",
     "pages/onlineCourses/onlineCourses",
-    "pages/personalCenter/personalCenter"
+    "pages/personalCenter/personalCenter",
+    "pages/newsContent/newsContent"
   ],
   "window": {
     "backgroundTextStyle": "light",
