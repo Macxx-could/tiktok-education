@@ -1,0 +1,19 @@
+{
+    "condition": {
+        "miniprogram": {
+            "current": 1690623320452,
+            "list": [
+                {
+                    "id": 1690623320452,
+                    "name": "pages/newsContent/newsContent",
+                    "pathName": "pages/newsContent/newsContent",
+                    "query": "id=1",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code",
+                    "mockUpdateType": "Noupdate"
+                }
+            ]
+        }
+    }
+}
