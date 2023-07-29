@@ -7,6 +7,10 @@
         </view>
     </view>
     <view class="block-title">公司简介</view>
+    <view class="introduction-container">
+        <image src='/images/company-qt.png' mode='widthFix' class='company-qt'></image>
+        <text>{{introduction.content}}</text>
+    </view>
     <view class="block-title">企业荣誉</view>
     <view class="block-title">学习环境</view>
 </scroll-view>
