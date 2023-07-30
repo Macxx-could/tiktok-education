@@ -1,7 +1,7 @@
 {
     "condition": {
         "miniprogram": {
-            "current": 1690625539108,
+            "current": 1690739287368,
             "list": [
                 {
                     "id": 1690623320452,
@@ -17,6 +17,16 @@
                     "id": 1690625539108,
                     "name": "pages/companiesToIntroduce/companiesToIntroduce",
                     "pathName": "pages/companiesToIntroduce/companiesToIntroduce",
+                    "query": "",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code",
+                    "mockUpdateType": "Noupdate"
+                },
+                {
+                    "id": 1690739287368,
+                    "name": "pages/courseIntroduction/courseIntroduction",
+                    "pathName": "pages/courseIntroduction/courseIntroduction",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",

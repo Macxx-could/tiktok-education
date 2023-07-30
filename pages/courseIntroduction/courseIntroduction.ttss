@@ -1,0 +1,15 @@
+.course-introduce-page {
+    padding: 30rpx;
+}
+.block-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 25rpx;
+  margin-top: 45rpx;
+}
+.first-node{
+    margin-top: 0;
+}
+.introduce-image{
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+<scroll-view scroll-y class="scrollPage course-introduce-page">
+    <view class="block-title first-node">产品设计过程演示</view>
+    <image src="/images/product-video-cover.png" mode="widthFix" class="introduce-image"> </image>
+
+    <view class="block-title">课程一：产品结构设计工程师特训</view>
+    <image src="/images/course-introduce.png" mode="widthFix" class="introduce-image"> </image>
+
+    <view class="block-title">学习后你能掌握哪些能力？</view>
+    <image src="/images/mind.png" mode="widthFix" class="introduce-image"> </image>
+
+    <view class="block-title">课程二：项目经理课</view>
+    <image src="/images/course-introduce.png" mode="widthFix" class="introduce-image"> </image>
+
+    <view class="block-title">学习后你能掌握哪些能力？</view>
+    <image src="/images/mind.png" mode="widthFix" class="introduce-image"> </image>
+</scroll-view>

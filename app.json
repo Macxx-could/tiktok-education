@@ -7,7 +7,8 @@
     "pages/onlineCourses/onlineCourses",
     "pages/personalCenter/personalCenter",
     "pages/newsContent/newsContent",
-    "pages/companiesToIntroduce/companiesToIntroduce"
+    "pages/companiesToIntroduce/companiesToIntroduce",
+    "pages/courseIntroduction/courseIntroduction"
   ],
   "window": {
     "backgroundTextStyle": "light",

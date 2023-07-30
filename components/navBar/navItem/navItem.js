@@ -23,7 +23,7 @@ Component({
             const key = this.data.text
             const urlMap = {
                 ['企业介绍']: "/pages/companiesToIntroduce/companiesToIntroduce",
-                ['课程介绍']: "/pages/companiesToIntroduce/companiesToIntroduce",
+                ['课程介绍']: "/pages/courseIntroduction/courseIntroduction",
                 ['学员成果']: "/pages/companiesToIntroduce/companiesToIntroduce",
                 ['线上课程']: "/pages/companiesToIntroduce/companiesToIntroduce",
             }
