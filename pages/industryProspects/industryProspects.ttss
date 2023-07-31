@@ -40,3 +40,13 @@
   /* padding-bottom: 25rpx; */
 }
 /* 国家政策 */
+
+.block-title.other-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more-text {
+  font-weight: 400;
+  font-size: 22rpx;
+}

@@ -61,4 +61,12 @@ Page({
     ],
   },
   onLoad: function (options) {},
+  /**
+   * 行业动态-点击更多按钮跳转到列表页面
+   * @param {} e
+   */
+  clickMoreText(e) {
+    const url = `/pages/industryOutlookList/industryOutlookList`;
+    tt.navigateTo({ url });
+  },
 });

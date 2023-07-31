@@ -10,7 +10,13 @@
             <text>说明文案</text>
         </view>
     </view>
-    <view class="block-title">行业动态</view>
+    <view class="block-title other-type">
+        <text>行业动态</text>
+        <text class="more-text text-gray" data-title="行业动态" bindtap="clickMoreText">
+            <text>更多</text>
+            <text class="cuIcon-right lg "></text>
+        </text>
+    </view>
     <view class="box-second">
         <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.content}}"
             img="{{item.img}}"></describeItem>

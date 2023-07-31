@@ -1,7 +1,7 @@
 {
     "condition": {
         "miniprogram": {
-            "current": 1690811561676,
+            "current": 1690813285733,
             "list": [
                 {
                     "id": 1690623320452,
@@ -67,6 +67,16 @@
                     "id": 1690811561676,
                     "name": "pages/industryProspects/industryProspects",
                     "pathName": "pages/industryProspects/industryProspects",
+                    "query": "",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code",
+                    "mockUpdateType": "Noupdate"
+                },
+                {
+                    "id": 1690813285733,
+                    "name": "pages/industryOutlookList/industryOutlookList",
+                    "pathName": "pages/industryOutlookList/industryOutlookList",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",
