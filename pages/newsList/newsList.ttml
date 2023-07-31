@@ -5,5 +5,5 @@
 </scroll-view>
 <view class="pagination-container">
     <pagination currentPage="{{currentPage}}" total="{{total}}" pageSize="{{pageSize}}"
-                bind:pageChange="handlePageChange"></pagination>
+        bind:pageChange="handlePageChange"></pagination>
 </view>

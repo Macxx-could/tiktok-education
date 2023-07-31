@@ -28,8 +28,8 @@
     <view class="block-title">企业荣誉</view>
     <view class="page-section">
         <swiper easing-function="default" indicator-dots current="{{0}}" current-item-id="" previous-margin=""
-                next-margin="" display-multiple-items="{{1}}" autoplay interval="{{2000}}" circular duration="{{500}}"
-                bindanimationfinish="animationFinish" bindtransition="transition">
+            next-margin="" display-multiple-items="{{1}}" autoplay interval="{{2000}}" circular duration="{{500}}"
+            bindanimationfinish="animationFinish" bindtransition="transition">
             <block tt:for="{{honor}}">
                 <swiper-item class="swiper-item">
                     <image src='/images/certificate.png' mode='heightFix' class='certificate'></image>
@@ -42,7 +42,7 @@
     <view class="block-title">学习环境</view>
     <view class=" study-environment">
         <block tt:for="{{environment}}">
-            <view class="image-item">
+            <view class="image-item" bindtap="jumpToEnvironment" data-name={{item.name}}>
                 <image src='/images/{{item.img}}.png' mode='widthFix'></image>
                 <text class="image-name">{{item.name}}</text>
             </view>

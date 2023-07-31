@@ -1,3 +1,9 @@
 {
-    "usingComponents": {}
-}
+    "backgroundColor": "#ffffff",
+    "backgroundColorTop": "#ffffff",
+    "backgroundColorBottom": "#ffffff",
+    "navigationBarTitleText": "校区环境",
+    "usingComponents": {
+      "pagination": "/components/pagination/pagination"
+    }
+  }

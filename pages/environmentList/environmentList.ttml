@@ -1,2 +1,14 @@
-<!-- f:\code\part_time_job\tiktok-education\pages\environmentList\environmentList.ttml -->
-<text>f:\code\part_time_job\tiktok-education\pages\environmentList\environmentList.ttml</text>
+<scroll-view scroll-y class="scrollPage environment-list">
+    <view class="environment-group">
+        <bock tt:for="{{environment}}">
+            <view class="environment-item">
+                <image src="/images/study_env_01.png" mode="widthFix"> </image>
+                <text>{{item.name}}</text>
+            </view>
+        </bock>
+    </view>
+</scroll-view>
+<view class="pagination-container">
+    <pagination currentPage="{{currentPage}}" total="{{total}}" pageSize="{{pageSize}}"
+        bind:pageChange="handlePageChange"></pagination>
+</view>

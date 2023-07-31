@@ -1,1 +1,30 @@
-/* f:\code\part_time_job\tiktok-education\pages\environmentList\environmentList.ttss */
+.environment-list {
+  position: relative;
+  height: 90vh;
+}
+.environment-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15rpx;
+}
+.environment-item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.environment-item > image {
+  width: 330rpx;
+  margin-bottom: 15rpx;
+}
+.pagination-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 52px;
+  z-index: 1024;
+  height: calc(52px + env(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+  display: flex;
+  justify-content: center;
+}
