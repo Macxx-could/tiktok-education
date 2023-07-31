@@ -1,7 +1,7 @@
 {
     "condition": {
         "miniprogram": {
-            "current": 1690739287368,
+            "current": 1690806295385,
             "list": [
                 {
                     "id": 1690623320452,
@@ -27,6 +27,16 @@
                     "id": 1690739287368,
                     "name": "pages/courseIntroduction/courseIntroduction",
                     "pathName": "pages/courseIntroduction/courseIntroduction",
+                    "query": "",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code",
+                    "mockUpdateType": "Noupdate"
+                },
+                {
+                    "id": 1690806295385,
+                    "name": "pages/studentAchievements/studentAchievements",
+                    "pathName": "pages/studentAchievements/studentAchievements",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",

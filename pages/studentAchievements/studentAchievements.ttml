@@ -1,0 +1,58 @@
+<scroll-view scroll-y class="scrollPage student-achievements">
+    <view class="block-title first-node">就业结果反馈</view>
+    <view class="page-section">
+        <swiper easing-function="default" indicator-dots current="{{0}}" display-multiple-items="{{1}}" autoplay
+            interval="{{2000}}" circular duration="{{500}}" bindanimationfinish="animationFinish"
+            bindtransition="transition">
+            <block tt:for="{{resultFeedback}}">
+                <swiper-item class="swiper-item">
+                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
+                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
+                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="block-title first-node">学员心得体会</view>
+    <view class="page-section">
+        <swiper easing-function="default" indicator-dots current="{{0}}" display-multiple-items="{{1}}" autoplay
+            interval="{{2000}}" circular duration="{{500}}" bindanimationfinish="animationFinish"
+            bindtransition="transition">
+            <block tt:for="{{experience}}">
+                <swiper-item class="swiper-item">
+                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
+                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
+                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="block-title first-node">学员毕业合照</view>
+    <view class="page-section">
+        <swiper easing-function="default" indicator-dots current="{{0}}" display-multiple-items="{{1}}" autoplay
+            interval="{{2000}}" circular duration="{{500}}" bindanimationfinish="animationFinish"
+            bindtransition="transition">
+            <block tt:for="{{groupPhoto}}">
+                <swiper-item class="swiper-item group-photo">
+                    <view class="photo-box">
+                        <image src='/images/group_photo_03.png' mode='widthFix'></image>
+                        <text>xxx届毕业照</text>
+                    </view>
+                    <view class="photo-box">
+                        <image src='/images/group_photo_05.png' mode='widthFix'></image>
+                        <text>xxx届毕业照</text>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="block-title first-node">学员画图速度表演秀</view>
+    <view class="grid-container">
+        <block tt:for="{{performanceShow}}">
+            <view class="grid-item">
+                <image src='/images/video-cover-03.png' mode='widthFix' class="grid-image"></image>
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+    </view>
+</scroll-view>

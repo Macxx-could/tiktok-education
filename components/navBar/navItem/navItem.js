@@ -24,7 +24,7 @@ Component({
             const urlMap = {
                 ['企业介绍']: "/pages/companiesToIntroduce/companiesToIntroduce",
                 ['课程介绍']: "/pages/courseIntroduction/courseIntroduction",
-                ['学员成果']: "/pages/companiesToIntroduce/companiesToIntroduce",
+                ['学员成果']: "/pages/studentAchievements/studentAchievements",
                 ['线上课程']: "/pages/companiesToIntroduce/companiesToIntroduce",
             }
             const url = urlMap[key] || "/pages/home/home"

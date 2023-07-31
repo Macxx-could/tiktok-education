@@ -1,0 +1,56 @@
+.student-achievements {
+  padding: 30rpx;
+  padding-bottom: 60rpx;
+}
+.block-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 25rpx;
+  margin-top: 45rpx;
+}
+.first-node {
+  margin-top: 0;
+}
+
+.swiper-item {
+  display: flex;
+  height: 170px;
+}
+
+.certificate {
+  margin: 0 auto;
+}
+.page-section {
+  margin-bottom: 60rpx;
+}
+.group-photo {
+  justify-content: space-between;
+  height: 200px;
+}
+.group-photo > .photo-box {
+  flex: 1;
+  margin: 0 10rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.grid-item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.grid-image {
+  width: 320rpx;
+  margin-bottom: 10rpx;
+}
