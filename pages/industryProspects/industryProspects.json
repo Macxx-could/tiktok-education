@@ -1,3 +1,6 @@
 {
-    "usingComponents": {}
+  "usingComponents": {
+    "describeItem": "/components/describeItem/describeItem",
+    "newsItem": "/components/newsItem/newsItem"
+  }
 }

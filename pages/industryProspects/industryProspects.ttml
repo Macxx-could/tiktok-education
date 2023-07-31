@@ -1,2 +1,23 @@
-<!-- f:\code\part_time_job\tiktok-education\pages\industryProspects\industryProspects.ttml -->
-<text>f:\code\part_time_job\tiktok-education\pages\industryProspects\industryProspects.ttml</text>
+<scroll-view scroll-y class="scrollPage course-introduce-page">
+    <view class="block-title first-node">人才网招聘信息</view>
+    <view class="box-first">
+        <view class="box-item">
+            <image src="/images/boss.png" mode="widthFix" class="recruit-image"> </image>
+            <text>说明文案</text>
+        </view>
+        <view class="box-item">
+            <image src="/images/qcwy.png" mode="widthFix" class="recruit-image"> </image>
+            <text>说明文案</text>
+        </view>
+    </view>
+    <view class="block-title">行业动态</view>
+    <view class="box-second">
+        <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.content}}"
+            img="{{item.img}}"></describeItem>
+    </view>
+    <view class="block-title">国家政策</view>
+    <view class="news-group">
+        <newsItem tt:for="{{news}}" item="{{item}}"></newsItem>
+    </view>
+    <!-- <image src="/images/mind.png" mode="widthFix" class="introduce-image"> </image> -->
+</scroll-view>

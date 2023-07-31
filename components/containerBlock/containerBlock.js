@@ -25,7 +25,7 @@ Component({
             const urlMap = {
                 ['学员/员工日常活动']: "/pages/newsList/newsList",
                 ['公司对外合作动态/新闻']: "/pages/newsList/newsList",
-                ['行业前景确认']: "/pages/newsList/newsList",
+                ['行业前景确认']: "/pages/industryProspects/industryProspects",
                 ['创始人故事/品牌故事']: "/pages/newsList/newsList",
             }
             const url = urlMap[title] || "/pages/home/home"

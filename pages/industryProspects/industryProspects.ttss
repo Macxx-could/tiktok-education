@@ -1,1 +1,42 @@
-/* f:\code\part_time_job\tiktok-education\pages\industryProspects\industryProspects.ttss */
+.course-introduce-page {
+  padding: 30rpx;
+  padding-bottom: 60rpx;
+}
+.block-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 25rpx;
+  margin-top: 45rpx;
+}
+.first-node {
+  margin-top: 0;
+}
+
+/* 人才网招聘信息 */
+.box-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-first .box-item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.recruit-image {
+  width: 330rpx;
+  margin-bottom: 15rpx;
+}
+/* 行业动态 */
+.box-second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10rpx;
+  row-gap: 30rpx;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 25rpx; */
+}
+/* 国家政策 */
