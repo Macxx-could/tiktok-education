@@ -1,1 +1,42 @@
-/* f:\code\part_time_job\tiktok-education\pages\industryOutlookList\industryOutlookList.ttss */
+/* pages/newsList/newsList.ttss */
+.list {
+  position: relative;
+  height: 90vh;
+  padding: 30rpx;
+}
+
+.pagination-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 52px;
+  z-index: 1024;
+  height: calc(52px + env(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+  display: flex;
+  justify-content: center;
+}
+
+.describe-item {
+  padding-bottom: 40rpx;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40rpx;
+}
+.describe-image {
+  width: 100%;
+}
+.describe-title {
+  display: block;
+  font-weight: bold;
+  font-size: 28rpx;
+  margin: 15rpx 0;
+}
+.describe-content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3; /* 控制显示的行数 */
+  font-size: 24rpx;
+  width: 100%;
+}

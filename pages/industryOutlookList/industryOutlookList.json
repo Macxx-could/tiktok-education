@@ -1,3 +1,6 @@
 {
-    "usingComponents": {}
+  "usingComponents": {
+    "describeItem": "/components/describeItem/describeItem",
+    "pagination": "/components/pagination/pagination"
+  }
 }

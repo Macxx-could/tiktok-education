@@ -1,2 +1,13 @@
-<!-- f:\code\part_time_job\tiktok-education\pages\industryOutlookList\industryOutlookList.ttml -->
-<text>f:\code\part_time_job\tiktok-education\pages\industryOutlookList\industryOutlookList.ttml</text>
+<scroll-view scroll-y class="scrollPage list">
+    <view class="box-second">
+        <view class="describe-item" tt:for="{{developmentProspects}}">
+            <image mode='widthFix' src="/images/{{item.img}}.jpg" class="describe-image"></image>
+            <text class="describe-title text-cut" style="width: 330rpx">{{item.title}}</text>
+            <view class="describe-content">{{item.content}}</view>
+        </view>
+    </view>
+</scroll-view>
+<view class="pagination-container">
+    <pagination currentPage="{{currentPage}}" total="{{total}}" pageSize="{{pageSize}}"
+        bind:pageChange="handlePageChange"></pagination>
+</view>
