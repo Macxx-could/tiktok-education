@@ -9,7 +9,12 @@
         "pages/newsContent/newsContent",
         "pages/companiesToIntroduce/companiesToIntroduce",
         "pages/courseIntroduction/courseIntroduction",
-        "pages/studentAchievements/studentAchievements"
+        "pages/studentAchievements/studentAchievements",
+        "pages/environmentList/environmentList",
+        "pages/environmentalDetails/environmentalDetails",
+        "pages/industryProspects/industryProspects",
+        "pages/industryOutlookList/industryOutlookList",
+        "pages/industryProspectDetails/industryProspectDetails"
     ],
     "window": {
         "backgroundTextStyle": "light",
