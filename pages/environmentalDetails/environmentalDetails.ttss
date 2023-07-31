@@ -1,1 +1,42 @@
-/* f:\code\part_time_job\tiktok-education\pages\environmentalDetails\environmentalDetails.ttss */
+.news-content {
+  padding: 55rpx 40rpx 30rpx;
+}
+.content-body {
+  padding: 30rpx 0;
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 45rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+}
+.pre-news {
+  text-align: left;
+  flex: 1;
+  flex-shrink: 0;
+}
+.next-news {
+  text-align: right;
+  flex: 1;
+  flex-shrink: 0;
+}
+.pagination-text {
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.pagination-news-title {
+  /*display: block;*/
+  font-size: 24rpx;
+}
+.content-image {
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+.env-title {
+  font-size: 30rpx;
+  font-weight: bold;
+}

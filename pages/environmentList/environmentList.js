@@ -34,4 +34,12 @@ Page({
     });
     // 在这里可以根据新的页码进行数据的加载或其他操作
   },
+  /**
+   * 跳转到环境详情页面
+   * @param {*} e
+   */
+  jumpToDetail(e) {
+    const url = `/pages/environmentalDetails/environmentalDetails`;
+    tt.navigateTo({ url });
+  },
 });

@@ -1,7 +1,7 @@
 {
     "condition": {
         "miniprogram": {
-            "current": 1690809096508,
+            "current": 1690810796560,
             "list": [
                 {
                     "id": 1690623320452,
@@ -47,6 +47,16 @@
                     "id": 1690809096508,
                     "name": "pages/environmentList/environmentList",
                     "pathName": "pages/environmentList/environmentList",
+                    "query": "",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code",
+                    "mockUpdateType": "Noupdate"
+                },
+                {
+                    "id": 1690810796560,
+                    "name": "pages/environmentalDetails/environmentalDetails",
+                    "pathName": "pages/environmentalDetails/environmentalDetails",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",

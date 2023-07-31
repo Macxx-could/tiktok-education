@@ -1,7 +1,7 @@
 <scroll-view scroll-y class="scrollPage environment-list">
     <view class="environment-group">
         <bock tt:for="{{environment}}">
-            <view class="environment-item">
+            <view class="environment-item" bindtap="jumpToDetail" data-name="{{item.name}}">
                 <image src="/images/study_env_01.png" mode="widthFix"> </image>
                 <text>{{item.name}}</text>
             </view>
