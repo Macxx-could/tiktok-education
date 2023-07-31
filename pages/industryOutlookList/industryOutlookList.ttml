@@ -1,6 +1,7 @@
 <scroll-view scroll-y class="scrollPage list">
     <view class="box-second">
-        <view class="describe-item" tt:for="{{developmentProspects}}">
+        <view class="describe-item" tt:for="{{developmentProspects}}" bindtap="jumpToDetail"
+            data-title="{{item.title}}">
             <image mode='widthFix' src="/images/{{item.img}}.jpg" class="describe-image"></image>
             <text class="describe-title text-cut" style="width: 330rpx">{{item.title}}</text>
             <view class="describe-content">{{item.content}}</view>

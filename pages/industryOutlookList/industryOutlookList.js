@@ -32,4 +32,12 @@ Page({
     total: 100,
   },
   onLoad: function (options) {},
+  /**
+   * 跳转到就业前景详情页面
+   * @param {*} e
+   */
+  jumpToDetail(e) {
+    const url = `/pages/industryProspectDetails/industryProspectDetails`;
+    tt.navigateTo({ url });
+  },
 });

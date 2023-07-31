@@ -1,1 +1,52 @@
 /* f:\code\part_time_job\tiktok-education\pages\industryProspectDetails\industryProspectDetails.ttss */
+.news-content {
+  padding: 55rpx 40rpx 30rpx;
+}
+.content-header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+}
+.main-title {
+  font-size: 33rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+.content-desc {
+  font-size: 20rpx;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9b9b9b;
+  padding-bottom: 30rpx;
+}
+.content-body {
+  padding: 30rpx 0;
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 45rpx;
+}
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+}
+.pre-news {
+  text-align: left;
+  flex: 1;
+  flex-shrink: 0;
+}
+.next-news {
+  text-align: right;
+  flex: 1;
+  flex-shrink: 0;
+}
+.pagination-text {
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.pagination-news-title {
+  /*display: block;*/
+  font-size: 24rpx;
+}

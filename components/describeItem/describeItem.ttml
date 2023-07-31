@@ -1,4 +1,4 @@
-<view class="describe-item">
+<view class="describe-item" bindtap="jumpToDetail" data-title="{{title}}">
     <image mode='widthFix' src="/images/{{img}}.jpg" class="describe-image"></image>
     <text class="describe-title text-cut" style="width: 330rpx">{{title}}</text>
     <view class="describe-content">{{content}}</view>
