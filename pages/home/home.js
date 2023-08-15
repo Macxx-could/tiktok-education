@@ -1,9 +1,11 @@
-// components/test.js
+const { request } = require('../../utils/request.js');
 Component({
   /**
    * 组件的初始数据
    */
   data: {
+    // 顶部banner列表
+    bannerList: [{ bannerUrl: '/images/banner.jpg' }],
     // 活动列表
     activities: [
       { img: "t1", name: "学员日常活动" },
@@ -85,8 +87,25 @@ Component({
     ],
   },
 
+  lifetimes: {
+    attached() {
+      this.getBannerList()
+    }
+  },
+
   /**
    * 组件的方法列表
    */
-  methods: {},
+  methods: {
+    // 获取顶部banner轮播图列表
+    getBannerList() {
+      const url = '/banner/list'
+      request(url, 'get').then(res => {
+        const { data: bannerList } = res
+        this.setData({ bannerList })
+      }).catch(err => {
+        console.log(err)
+      })
+    }
+  },
 });

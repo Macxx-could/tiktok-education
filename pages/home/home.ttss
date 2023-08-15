@@ -1,12 +1,27 @@
-.home-page{
+.home-page {
   position: relative;
 }
-.logo{
+
+.logo {
   position: absolute;
   top: 10rpx;
   left: 20rpx;
   width: 237rpx;
 }
+swiper{
+  height: 400rpx;
+}
+.swiper-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-banner {
+  flex: 1;
+}
+
 .activity-group {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

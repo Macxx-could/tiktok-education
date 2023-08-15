@@ -1,7 +1,17 @@
 <scroll-view scroll-y class="scrollPage home-page">
-    <!--Banner图区域-->
-    <image src='/images/banner.jpg' mode='widthFix' class='response'></image>
-    <image src='/images/logo.png' mode='widthFix' class='logo'></image>
+    <!--Banner图区域(轮播)-->
+    <view class="page-section">
+        <swiper easing-function="default" indicator-dots current="{{0}}" current-item-id="" previous-margin=""
+            next-margin="" display-multiple-items="{{1}}" autoplay interval="{{3000}}" circular duration="{{500}}"
+            bindanimationfinish="animationFinish" bindtransition="transition">
+            <block tt:for="{{bannerList}}">
+                <swiper-item class="swiper-item">
+                    <image src="{{item.bannerUrl}}" mode='heightFix' class='header-banner'></image>
+                    <image src='/images/logo.png' mode='widthFix' class='logo'></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
     <!--    通知-->
     <notice></notice>
     <!--    企业介绍/课程介绍/企业实战/学员成果-->
@@ -22,7 +32,7 @@
     <containerBlock title="行业前景确认">
         <view class="industry-prospects-group">
             <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.content}}"
-                          img="{{item.img}}"></describeItem>
+                img="{{item.img}}"></describeItem>
         </view>
     </containerBlock>
     <!--    创始人故事/品牌故事-->
