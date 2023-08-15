@@ -1,6 +1,6 @@
 <view class="notice-comp">
     <text class="cuIcon-notificationfill lg icon-color"></text>
     <view class="notification-container">
-        <view class="notification-item">某某学员已报名某某课程</view>
+        <view class="notification-item">{{content}}</view>
     </view>
 </view>
