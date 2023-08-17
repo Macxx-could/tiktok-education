@@ -7,45 +7,9 @@ Component({
     // 顶部banner列表
     bannerList: [{ bannerUrl: '/images/banner.jpg' }],
     // 活动列表
-    activities: [
-      { img: "t1", name: "学员日常活动" },
-      { img: "t2", name: "学员日常活动" },
-      { img: "t3", name: "学员日常活动" },
-      { img: "t1", name: "学员日常活动" },
-      { img: "t2", name: "学员日常活动" },
-      { img: "t3", name: "学员日常活动" },
-    ],
+    activities: [],
     // 公司对外合作动态/新闻
-    news: [
-      {
-        img: "t4",
-        title: "新闻标题一",
-        date: "2023-7-14",
-        content:
-          "文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案",
-      },
-      {
-        img: "t4",
-        title: "新闻标题二",
-        date: "2023-7-14",
-        content:
-          "文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案",
-      },
-      {
-        img: "t4",
-        title: "这是一个超级长的新闻标题用来测试文本截断",
-        date: "2023-7-14",
-        content:
-          "文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案",
-      },
-      {
-        img: "t4",
-        title: "新闻标题四",
-        date: "2023-7-14",
-        content:
-          "文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案文章描述文案",
-      },
-    ],
+    news: [],
     // 行业发展前景
     developmentProspects: [
       {
@@ -90,7 +54,8 @@ Component({
   lifetimes: {
     attached() {
       this.getBannerList()
-      this.getActivities()
+      this.getActivities() // 学生日常活动
+      this.getNewsList() // 公司对外新闻
     }
   },
 
@@ -117,6 +82,18 @@ Component({
           // 最多只显示6个元素
           const activities = rows.slice(0, 6)
           this.setData({ activities })
+        }
+      })
+    },
+    // 获取公司对外合作动态/新闻
+    getNewsList() {
+      const url = '/article/page'
+      request(url, 'get', { dyMenuId: 5 }).then(res => {
+        const { code, rows } = res
+        if (code === 200) {
+          // 最多只显示4个元素
+          const news = rows.slice(0, 4)
+          this.setData({ news })
         }
       })
     }
