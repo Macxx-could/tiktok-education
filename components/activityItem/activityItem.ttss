@@ -5,11 +5,21 @@
     justify-content: center;
     align-items: center;
 }
-.activity-img{
+
+.activity-img {
     width: 210rpx;
     height: auto;
 }
-.activity-name{
+
+.activity-name {
+    text-align: center;
+    width: 210rpx;
     margin-top: 15rpx;
     font-size: 24rpx;
+    white-space: nowrap;
+    /* 不换行 */
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    text-overflow: ellipsis;
+    /* 使用省略号表示截断 */
 }
