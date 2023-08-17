@@ -1,5 +1,6 @@
 <view class="describe-item" bindtap="jumpToDetail" data-title="{{title}}">
-    <image mode='widthFix' src="/images/{{img}}.jpg" class="describe-image"></image>
+    <image tt:if="{{!img}}" mode='widthFix' src="/images/t6.jpg" class="describe-image"></image>
+    <image tt:else mode='widthFix' src="{{img}}" class="describe-image"></image>
     <text class="describe-title text-cut" style="width: 330rpx">{{title}}</text>
     <view class="describe-content">{{content}}</view>
 </view>

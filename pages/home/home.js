@@ -11,32 +11,7 @@ Component({
     // 公司对外合作动态/新闻
     news: [],
     // 行业发展前景
-    developmentProspects: [
-      {
-        img: "t5",
-        title: "行业发展前景一",
-        content:
-          "行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案",
-      },
-      {
-        img: "t6",
-        title: "行业发展前景二",
-        content:
-          "行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案",
-      },
-      {
-        img: "t5",
-        title: "行业发展前景三",
-        content:
-          "行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案",
-      },
-      {
-        img: "t6",
-        title: "行业发展前景四",
-        content:
-          "行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案行业发展前景文案",
-      },
-    ],
+    developmentProspects: [],
     // 创始人/品牌故事
     stories: [
       {
@@ -56,6 +31,7 @@ Component({
       this.getBannerList()
       this.getActivities() // 学生日常活动
       this.getNewsList() // 公司对外新闻
+      this.getDevelopmentProspects() // 行业发展前景
     }
   },
 
@@ -94,6 +70,18 @@ Component({
           // 最多只显示4个元素
           const news = rows.slice(0, 4)
           this.setData({ news })
+        }
+      })
+    },
+    // 获取行业发展前景
+    getDevelopmentProspects() {
+      const url = '/article/page'
+      request(url, 'get', { dyMenuId: 6 }).then(res => {
+        const { code, rows } = res
+        if (code === 200) {
+          // 最多只显示4个元素
+          const developmentProspects = rows.slice(0, 4)
+          this.setData({ developmentProspects })
         }
       })
     }
