@@ -2,7 +2,8 @@
     <view class="block-title">企业宣传片</view>
     <view class="video-group">
         <view class="video-item" tt:for="{{videoList}}">
-            <image src='/images/video-cover-03.png' mode='widthFix' class='video-cover'></image>
+            <!-- <image src='/images/video-cover-03.png' mode='widthFix' class='video-cover'></image> -->
+            <video src='{{item.banner}}' mode='widthFix' class='video-cover'></video>
             <text class="video-title">{{item.title}}</text>
         </view>
     </view>

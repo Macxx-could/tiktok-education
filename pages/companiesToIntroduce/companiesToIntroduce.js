@@ -1,4 +1,4 @@
-// pages/companiesToIntroduce/companiesToIntroduce.js
+const { request } = require('../../utils/request.js');
 Page({
   /**
    * 页面的初始数据
@@ -26,12 +26,26 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {},
+  onLoad: function (options) {
+    this.getVideoList()   // 获取企业宣传片列表
+  },
   animationFinish(e) {
     console.log(e.detail);
   },
   transition(e) {
     console.log(e.detail);
+  },
+  // 获取企业宣传片列表
+  getVideoList() {
+    const url = '/article/page'
+    request(url, 'get', { dyMenuId: 8 }).then(res => {
+      const { code, rows } = res
+      if (code === 200) {
+        // 最多只显示3个元素
+        const videoList = rows.slice(0, 3)
+        this.setData({ videoList })
+      }
+    })
   },
   /**
    * 跳转到环境列表页面

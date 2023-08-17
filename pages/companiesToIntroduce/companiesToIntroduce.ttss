@@ -7,14 +7,15 @@
     font-weight: bold;
     margin-bottom: 25rpx;
 }
-.video-group{
+
+.video-group {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 60rpx;
 }
 
-.video-item{
+.video-item {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -27,59 +28,79 @@
     margin-bottom: 10rpx;
 }
 
-.introduction-container{
+.video-title {
+    text-align: center;
+    width: 220rpx;
+    white-space: nowrap;
+    /* 不换行 */
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    text-overflow: ellipsis;
+    /* 使用省略号表示截断 */
+}
+
+.introduction-container {
     height: 30vh;
     overflow: auto;
     /*padding-bottom: 30rpx;*/
     margin-bottom: 50rpx;
 }
-.company-qt{
+
+.company-qt {
     width: 100%;
     border-radius: 10rpx;
     margin-bottom: 30rpx;
 }
-.download-item{
+
+.download-item {
     display: flex;
     align-items: center;
     margin-bottom: 20rpx;
 }
-.file-name{
+
+.file-name {
     display: inline-block;
     margin-right: 10rpx;
 }
-.download-icon{
+
+.download-icon {
     width: 45rpx;
     margin-left: 20rpx;
 }
 
-.swiper-item{
+.swiper-item {
     display: flex;
     height: 170px;
 }
 
-.certificate{
+.certificate {
     margin: 0 auto;
 }
-.page-section{
+
+.page-section {
     margin-bottom: 60rpx;
 }
-.study-environment{
+
+.study-environment {
     margin-bottom: 60rpx;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.image-item{
+
+.image-item {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
-.image-item > image{
+
+.image-item>image {
     width: 220rpx;
     height: 120rpx;
     margin-bottom: 10rpx;
 }
-.image-name{
+
+.image-name {
     font-size: 20rpx;
 }
