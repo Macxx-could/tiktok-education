@@ -13,17 +13,7 @@ Component({
     // 行业发展前景
     developmentProspects: [],
     // 创始人/品牌故事
-    stories: [
-      {
-        img: "t7",
-        brand: "零壹教育课堂",
-        founder: "某某某",
-        // 创始人故事
-        founderStory: "创始人故事".repeat(50),
-        // 品牌故事
-        brandStory: "品牌故事".repeat(50),
-      },
-    ],
+    stories: [],
   },
 
   lifetimes: {
@@ -32,6 +22,7 @@ Component({
       this.getActivities() // 学生日常活动
       this.getNewsList() // 公司对外新闻
       this.getDevelopmentProspects() // 行业发展前景
+      this.getStories() // 获取创始人品牌故事
     }
   },
 
@@ -82,6 +73,18 @@ Component({
           // 最多只显示4个元素
           const developmentProspects = rows.slice(0, 4)
           this.setData({ developmentProspects })
+        }
+      })
+    },
+    // 获取创始人品牌故事
+    getStories() {
+      const url = '/article/page'
+      request(url, 'get', { dyMenuId: 7 }).then(res => {
+        const { code, rows } = res
+        if (code === 200) {
+          // 最多只显示1个元素
+          const stories = rows.slice(0, 1)
+          this.setData({ stories })
         }
       })
     }

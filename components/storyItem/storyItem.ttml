@@ -1,9 +1,10 @@
 <view class="story-item">
-    <image src="/images/{{story.img}}.jpg" class="story-image" mode='widthFix'></image>
-    <view class="brand">品牌：{{story.brand}}</view>
-    <view class="founder">创始人：{{story.founder}}</view>
+    <image tt:if="{{!story.img}}" src="/images/t7.jpg" class="story-image" mode='widthFix'></image>
+    <image tt:else src="{{story.img}}" class="story-image" mode='widthFix'></image>
+    <view class="brand">品牌：{{story.title}}</view>
+    <view class="founder">创始人：{{story.creator}}</view>
     <view class="story-title">创始人故事</view>
-    <view class="story-content">{{story.founderStory}}</view>
+    <view class="story-content">{{story.content}}</view>
     <view class="story-title">品牌故事</view>
-    <view class="story-content">{{story.brandStory}}</view>
+    <view class="story-content">{{story.content}}</view>
 </view>
