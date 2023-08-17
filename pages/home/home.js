@@ -90,6 +90,7 @@ Component({
   lifetimes: {
     attached() {
       this.getBannerList()
+      this.getActivities()
     }
   },
 
@@ -105,6 +106,18 @@ Component({
         this.setData({ bannerList })
       }).catch(err => {
         console.log(err)
+      })
+    },
+    // 获取学员日常活动列表
+    getActivities() {
+      const url = '/article/page'
+      request(url, 'get', { dyMenuId: 4 }).then(res => {
+        const { code, rows } = res
+        if (code === 200) {
+          // 最多只显示6个元素
+          const activities = rows.slice(0, 6)
+          this.setData({ activities })
+        }
       })
     }
   },
