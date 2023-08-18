@@ -1,13 +1,9 @@
 <scroll-view scroll-y class="scrollPage course-introduce-page">
     <view class="block-title first-node">人才网招聘信息</view>
     <view class="box-first">
-        <view class="box-item">
-            <image src="/images/boss.png" mode="widthFix" class="recruit-image"> </image>
-            <text>说明文案</text>
-        </view>
-        <view class="box-item">
-            <image src="/images/qcwy.png" mode="widthFix" class="recruit-image"> </image>
-            <text>说明文案</text>
+        <view class="box-item" tt:for="{{infos}}">
+            <image src="{{item.banner}}" mode="widthFix" class="recruit-image"> </image>
+            <text>{{item.title}}</text>
         </view>
     </view>
     <view class="block-title other-type">
@@ -18,8 +14,8 @@
         </text>
     </view>
     <view class="box-second">
-        <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.content}}"
-            img="{{item.img}}"></describeItem>
+        <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.digest}}"
+            img="{{item.banner}}"></describeItem>
     </view>
     <view class="block-title">国家政策</view>
     <view class="news-group">
