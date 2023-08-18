@@ -44,8 +44,8 @@
     <view class=" study-environment">
         <block tt:for="{{environment}}">
             <view class="image-item" bindtap="jumpToEnvironment" data-name={{item.name}}>
-                <image src='/images/{{item.img}}.png' mode='widthFix'></image>
-                <text class="image-name">{{item.name}}</text>
+                <image src='{{item.banner}}' mode='widthFix'></image>
+                <text class="image-name">{{item.title}}</text>
             </view>
         </block>
     </view>

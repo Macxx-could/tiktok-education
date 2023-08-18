@@ -102,5 +102,14 @@
 }
 
 .image-name {
+    width: 220rpx;
     font-size: 20rpx;
+    /* 单行文本截断 */
+    white-space: nowrap;
+    /* 不换行 */
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    text-overflow: ellipsis;
+    /* 使用省略号表示截断 */
+    text-align: center;
 }

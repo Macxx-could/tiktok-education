@@ -25,6 +25,7 @@ Page({
     this.getVideoList()   // 获取企业宣传片列表
     this.getIntroduction() // 获取公司简介
     this.getHonorList() // 获取企业荣誉列表
+    this.getEnvironment() // 获取校园环境
   },
   // 获取企业宣传片列表
   getVideoList() {
@@ -65,6 +66,18 @@ Page({
           honor.push(rows.slice(i, i + 3))
         }
         this.setData({ honor })
+      }
+    })
+  },
+  // 获取学习环境
+  getEnvironment() {
+    const url = '/article/page'
+    request(url, 'get', { dyMenuId: 11 }).then(res => {
+      const { code, rows } = res
+      if (code === 200) {
+        // 最多只显示3个元素
+        const environment = rows.slice(0, 3)
+        this.setData({ environment })
       }
     })
   },
