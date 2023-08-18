@@ -47,16 +47,18 @@ Component({
     methods: {
         onPrevPage() {
             if (this.data.currentPage > 1) {
-                this.triggerEvent('pageChange', {page: this.data.currentPage - 1});
+                this.triggerEvent('pageChange', { page: this.data.currentPage - 1 });
             }
-        }, onNextPage() {
+        },
+        onNextPage() {
             if (this.data.currentPage < this.data.total) {
-                this.triggerEvent('pageChange', {page: this.data.currentPage + 1});
+                this.triggerEvent('pageChange', { page: this.data.currentPage + 1 });
             }
-        }, onPageNumberTap(event) {
+        },
+        onPageNumberTap(event) {
             const page = event.currentTarget.dataset.page;
             if (page !== this.data.currentPage) {
-                this.triggerEvent('pageChange', {page});
+                this.triggerEvent('pageChange', { page });
             }
         }
     }

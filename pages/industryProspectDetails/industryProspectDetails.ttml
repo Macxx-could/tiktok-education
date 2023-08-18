@@ -10,7 +10,7 @@
     </view>
     <!--    内容区域-->
     <view class="content-body">
-        文章内容，应该使用富文本
+        <rich-text nodes="{{detail.content}}"> </rich-text>
     </view>
     <!--    翻页按钮-->
     <view class="pagination-container">

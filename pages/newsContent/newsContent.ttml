@@ -1,19 +1,19 @@
 <scroll-view scroll-y class="scrollPage news-content">
     <!--    主标题和副标题-->
     <view class="content-header">
-        <view class="main-title">文章主标题</view>
+        <view class="main-title">{{detail.title}}</view>
         <view class="content-desc">
-            <text class="content-desc-item">编辑：零壹教育</text>
-            <text class="content-desc-item">时间：2023-07-21</text>
-            <text class="content-desc-item">浏览量：30</text>
+            <text class="content-desc-item">编辑：{{detail.creator}}</text>
+            <text class="content-desc-item">时间：{{detail.createTime}}</text>
+            <text class="content-desc-item">浏览量：{{detail.pv || 0}}</text>
         </view>
     </view>
     <!--    内容区域-->
     <view class="content-body">
-        文章内容，应该使用富文本
+        <rich-text nodes="{{detail.content}}"> </rich-text>
     </view>
-    <!--    翻页按钮-->
-    <view class="pagination-container">
+    <!--    翻页按钮 接口返回的数据并不足以实现这个功能-->
+    <!-- <view class="pagination-container">
         <view class="pre-news">
             <text class="pagination-text">上一篇</text>
             <text class="pagination-news-title">
@@ -26,5 +26,5 @@
                 下一篇文章标题
             </text>
         </view>
-    </view>
+    </view> -->
 </scroll-view>

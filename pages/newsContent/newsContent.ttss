@@ -12,6 +12,7 @@
     font-size: 33rpx;
     font-weight: bold;
     margin-bottom: 30rpx;
+    text-align: center;
 }
 .content-desc{
     font-size: 20rpx;

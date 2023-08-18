@@ -1,7 +1,7 @@
 {
     "condition": {
         "miniprogram": {
-            "current": 1692337973143,
+            "current": 1692341447841,
             "list": [
                 {
                     "id": 1692303168162,
@@ -17,6 +17,16 @@
                     "id": 1692337973143,
                     "name": "pages/studentAchievements/studentAchievements",
                     "pathName": "pages/studentAchievements/studentAchievements",
+                    "query": "",
+                    "scene": "990001",
+                    "launchFrom": "scan",
+                    "location": "qr_code",
+                    "mockUpdateType": "Noupdate"
+                },
+                {
+                    "id": 1692341447841,
+                    "name": "pages/newsList/newsList",
+                    "pathName": "pages/newsList/newsList",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",

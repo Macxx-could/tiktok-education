@@ -1,4 +1,4 @@
-<view class="news-item" bindtap="clickNewsItem" data-id="1">
+<view class="news-item" bindtap="clickNewsItem" data-id="{{item.id}}">
     <view class="news-image-container">
         <image tt:if="{{!item.banner}}" src='/images/t1.jpg' mode='widthFix' class="news-image"></image>
         <image tt:else src="{{item.banner}}" class="news-image" mode='widthFix'></image>
