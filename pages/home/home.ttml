@@ -31,7 +31,7 @@
     <!--    行业前景确认-->
     <containerBlock title="行业前景确认">
         <view class="industry-prospects-group">
-            <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.content}}"
+            <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.digest}}"
                 img="{{item.banner}}"></describeItem>
         </view>
     </containerBlock>

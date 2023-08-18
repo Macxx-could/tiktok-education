@@ -81,10 +81,13 @@ Component({
       const url = '/article/page'
       request(url, 'get', { dyMenuId: 7 }).then(res => {
         const { code, rows } = res
-        if (code === 200) {
-          // 最多只显示1个元素
-          const stories = rows.slice(0, 1)
-          this.setData({ stories })
+        if (code === 200 && Array.isArray(rows) && rows.length > 0) {
+          // 获取第一个元素
+          const { id } = rows[0]
+          const url = `/article/get/one`
+          request(url, 'get', { id }).then(res => {
+            this.setData({ stories: [res.data] })
+          })
         }
       })
     }

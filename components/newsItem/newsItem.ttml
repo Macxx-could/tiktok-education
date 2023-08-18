@@ -6,6 +6,6 @@
     <view class="news-content-container">
         <view class="news-title text-cut" style="width: 400rpx;">{{item.title}}</view>
         <view class="news-date">{{item.createTime}}</view>
-        <view class="news-content">{{item.content}}</view>
+        <view class="news-content">{{item.digest}}</view>
     </view>
 </view>
