@@ -13,18 +13,12 @@
         <text>{{introduction.digest}}</text>
     </view>
     <view class="download-container">
-        <view class="download-item">
-            <text class="file-name">公司介绍文档1.ppt</text>
-            <image src='/images/download-01.png' mode='widthFix' class='download-icon'></image>
-        </view>
-        <view class="download-item">
-            <text class="file-name">公司的资料介绍文档二.ppt</text>
-            <image src='/images/download-02.png' mode='widthFix' class='download-icon'></image>
-        </view>
-        <view class="download-item">
-            <text class="file-name">公司的一些产品资料介绍文档.ppt</text>
-            <image src='/images/download-02.png' mode='widthFix' class='download-icon'></image>
-        </view>
+        <block tt:for="{{downloadList}}">
+            <view class="download-item" bindtap="downloadFile" data-file="{{item.banner}}">
+                <text class="file-name">{{item.title}}</text>
+                <image src='/images/download-01.png' mode='widthFix' class='download-icon'></image>
+            </view>
+        </block>
     </view>
     <view class="block-title">企业荣誉</view>
     <view class="page-section">

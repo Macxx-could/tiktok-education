@@ -1,17 +1,18 @@
 {
     "condition": {
         "miniprogram": {
-            "current": 1692347077295,
+            "current": 1692359852880,
             "list": [
                 {
-                    "id": 1692303168162,
+                    "id": 1692359852880,
                     "name": "pages/companiesToIntroduce/companiesToIntroduce",
                     "pathName": "pages/companiesToIntroduce/companiesToIntroduce",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",
                     "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
+                    "mockUpdateType": "Noupdate",
+                    "addType": "manual"
                 },
                 {
                     "id": 1692337973143,

@@ -12,6 +12,10 @@ Page({
     honor: [],
     // 校园环境
     environment: [],
+    // 下载列表
+    downloadList: [],
+    // 文件路径
+    imageSrc: ""
   },
 
   /**
@@ -22,6 +26,49 @@ Page({
     this.getIntroduction() // 获取公司简介
     this.getHonorList() // 获取企业荣誉列表
     this.getEnvironment() // 获取校园环境
+    this.getDownloadList() // 获取下载列表
+    const envInfo = tt.getEnvInfoSync()
+    console.log(envInfo)
+    this.setData({ envInfo });
+  },
+  // 获取下载列表
+  getDownloadList() {
+    const url = '/article/page'
+    request(url, 'get', { dyMenuId: 21 }).then(res => {
+      const { code, rows: downloadList } = res
+      if (code === 200) {
+        this.setData({ downloadList })
+      }
+    })
+  },
+  // 文件下载
+  downloadFile(e) {
+    const { currentTarget: { dataset: { file } } } = e
+    tt.downloadFile({
+      url: file,
+      header: {
+        "content-type": "application/json",
+      },
+      success: (res) => {
+        const filePath = res.tempFilePath
+        tt.openDocument({
+          filePath: filePath,
+          success: function (res) {
+            console.log("打开文档成功")
+          },
+        })
+      },
+      fail: (res) => {
+        console.log("downloadFile fail", res);
+        tt.showToast({
+          title: res.errMsg,
+          icon: "none",
+        });
+      },
+      complete: (res) => {
+        console.log("downloadFile complete", res);
+      },
+    });
   },
   // 获取企业宣传片列表
   getVideoList() {
