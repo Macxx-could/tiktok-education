@@ -35,6 +35,7 @@ Page({
         const page = event.detail.page;
         this.setData({ currentPage: page });
         // 在这里可以根据新的页码进行数据的加载或其他操作
+        this.getList()
     }
 
 })

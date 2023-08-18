@@ -15,7 +15,7 @@
     </view>
     <view class="box-second">
         <describeItem tt:for="{{developmentProspects}}" title="{{item.title}}" content="{{item.digest}}"
-            img="{{item.banner}}"></describeItem>
+            img="{{item.banner}}" id="{{item.id}}"></describeItem>
     </view>
     <view class="block-title">国家政策</view>
     <view class="news-group">

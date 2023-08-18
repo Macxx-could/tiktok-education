@@ -16,6 +16,10 @@ Component({
       type: String,
       value: "t5",
     },
+    id: {
+      type: String,
+      value: "",
+    }
   },
   /**
    * 组件的初始数据
@@ -31,7 +35,8 @@ Component({
      * @param {*} e
      */
     jumpToDetail(e) {
-      const url = `/pages/industryProspectDetails/industryProspectDetails`;
+      const { currentTarget: { dataset: { id } } } = e
+      const url = `/pages/industryProspectDetails/industryProspectDetails?id=${id}`;
       tt.navigateTo({ url });
     },
   },
