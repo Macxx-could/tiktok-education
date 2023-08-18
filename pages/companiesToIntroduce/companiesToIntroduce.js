@@ -5,17 +5,12 @@ Page({
    */
   data: {
     // 企业宣传片列表
-    videoList: [
-      { title: "广州校区" },
-      { title: "中山东区校区" },
-      { title: "中山南区校区" },
-    ],
+    videoList: [],
     // 公司简介
-    introduction: {
-      content: "公司简介文案".repeat(100),
-    },
+    introduction: {},
     // 企业荣誉
-    honor: ["demo-text-1", "demo-text-2", "demo-text-3"],
+    honor: [],
+    // 校园环境
     environment: [
       { name: "广东校区环境", img: "study_env_01" },
       { name: "中山东区校区环境", img: "study_env_02" },
@@ -28,12 +23,8 @@ Page({
    */
   onLoad: function (options) {
     this.getVideoList()   // 获取企业宣传片列表
-  },
-  animationFinish(e) {
-    console.log(e.detail);
-  },
-  transition(e) {
-    console.log(e.detail);
+    this.getIntroduction() // 获取公司简介
+    this.getHonorList() // 获取企业荣誉列表
   },
   // 获取企业宣传片列表
   getVideoList() {
@@ -44,6 +35,36 @@ Page({
         // 最多只显示3个元素
         const videoList = rows.slice(0, 3)
         this.setData({ videoList })
+      }
+    })
+  },
+  // 获取公司简介
+  getIntroduction() {
+    const url = '/article/page'
+    request(url, 'get', { dyMenuId: 9 }).then(res => {
+      const { code, rows } = res
+      if (code === 200 && Array.isArray(rows) && rows.length > 0) {
+        // 获取第一个元素
+        const { id } = rows[0]
+        const url = `/article/get/one`
+        request(url, 'get', { id }).then(res => {
+          this.setData({ introduction: res.data })
+        })
+      }
+    })
+  },
+  // 获取企业荣誉列表
+  getHonorList() {
+    const url = '/article/page'
+    request(url, 'get', { dyMenuId: 10 }).then(res => {
+      const { code, rows } = res
+      if (code === 200 && Array.isArray(rows) && rows.length > 0) {
+        // 将数组中的元素3个3个一组，构成一个新的数组
+        const honor = []
+        for (let i = 0; i < rows.length; i += 3) {
+          honor.push(rows.slice(i, i + 3))
+        }
+        this.setData({ honor })
       }
     })
   },

@@ -1,92 +1,12 @@
 {
     "condition": {
         "miniprogram": {
-            "current": 1690814088547,
+            "current": 1692303168162,
             "list": [
                 {
-                    "id": 1690623320452,
-                    "name": "pages/newsContent/newsContent",
-                    "pathName": "pages/newsContent/newsContent",
-                    "query": "id=1",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1690625539108,
+                    "id": 1692303168162,
                     "name": "pages/companiesToIntroduce/companiesToIntroduce",
                     "pathName": "pages/companiesToIntroduce/companiesToIntroduce",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1690739287368,
-                    "name": "pages/courseIntroduction/courseIntroduction",
-                    "pathName": "pages/courseIntroduction/courseIntroduction",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1690806295385,
-                    "name": "pages/studentAchievements/studentAchievements",
-                    "pathName": "pages/studentAchievements/studentAchievements",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1690809096508,
-                    "name": "pages/environmentList/environmentList",
-                    "pathName": "pages/environmentList/environmentList",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1690810796560,
-                    "name": "pages/environmentalDetails/environmentalDetails",
-                    "pathName": "pages/environmentalDetails/environmentalDetails",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1690811561676,
-                    "name": "pages/industryProspects/industryProspects",
-                    "pathName": "pages/industryProspects/industryProspects",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1690813285733,
-                    "name": "pages/industryOutlookList/industryOutlookList",
-                    "pathName": "pages/industryOutlookList/industryOutlookList",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1690814088547,
-                    "name": "pages/industryProspectDetails/industryProspectDetails",
-                    "pathName": "pages/industryProspectDetails/industryProspectDetails",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",
@@ -95,5 +15,8 @@
                 }
             ]
         }
+    },
+    "setting": {
+        "urlCheck": false
     }
 }

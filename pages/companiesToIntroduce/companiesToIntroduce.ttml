@@ -10,7 +10,7 @@
     <view class="block-title">公司简介</view>
     <view class="introduction-container">
         <image src='/images/company-qt.png' mode='widthFix' class='company-qt'></image>
-        <text>{{introduction.content}}</text>
+        <text>{{introduction.digest}}</text>
     </view>
     <view class="download-container">
         <view class="download-item">
@@ -29,13 +29,13 @@
     <view class="block-title">企业荣誉</view>
     <view class="page-section">
         <swiper easing-function="default" indicator-dots current="{{0}}" current-item-id="" previous-margin=""
-            next-margin="" display-multiple-items="{{1}}" autoplay interval="{{2000}}" circular duration="{{500}}"
-            bindanimationfinish="animationFinish" bindtransition="transition">
+            next-margin="" display-multiple-items="{{1}}" autoplay interval="{{2000}}" circular duration="{{500}}">
             <block tt:for="{{honor}}">
                 <swiper-item class="swiper-item">
-                    <image src='/images/certificate.png' mode='heightFix' class='certificate'></image>
-                    <image src='/images/certificate.png' mode='heightFix' class='certificate'></image>
-                    <image src='/images/certificate.png' mode='heightFix' class='certificate'></image>
+                    <block tt:for="{{item}}" tt:for-item="imgItem">
+                        <image src='{{imgItem.banner}}' mode='heightFix' class='certificate'>
+                        </image>
+                    </block>
                 </swiper-item>
             </block>
         </swiper>
