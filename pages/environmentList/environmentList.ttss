@@ -17,6 +17,13 @@
   width: 330rpx;
   margin-bottom: 15rpx;
 }
+.detail-title{
+  width: 330rpx;
+  text-align: center;
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出部分隐藏 */
+  text-overflow: ellipsis; /* 使用省略号表示截断 */
+}
 .pagination-container {
   position: fixed;
   bottom: 0;

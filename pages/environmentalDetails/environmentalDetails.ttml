@@ -1,11 +1,11 @@
 <scroll-view scroll-y class="scrollPage news-content">
     <!--    内容区域-->
     <view class="content-body">
-        <image src="/images/study_env_01.png" mode="widthFix" class="content-image"> </image>
-        <text class="env-title">广东校区环境一角</text>
+        <image src="{{detail.banner}}" mode="widthFix" class="content-image"> </image>
+        <text class="env-title">{{detail.title}}</text>
     </view>
     <!--    翻页按钮-->
-    <view class="pagination-container">
+    <!-- <view class="pagination-container">
         <view class="pre-news">
             <text class="pagination-text">上一条</text>
             <text class="pagination-news-title">
@@ -18,5 +18,5 @@
                 广东校区休息室一角
             </text>
         </view>
-    </view>
+    </view> -->
 </scroll-view>
