@@ -1,15 +1,16 @@
 <scroll-view scroll-y class="scrollPage fan-benefits-page">
-    <text class="page-title">欢迎来访零壹教育，我们为您准备了诸多福利</text>
+    <text class="page-title">{{detail.title}}</text>
     <text class="desc-text">关注下方公众号领取福利：</text>
-    <view class="qr-code-box">公众号二维码</view>
-    <text class="page-title">领取福利：</text>
+    <image src="{{detail.banner}}" class="qr-code-box" mode='widthFix'> </image>
+    <!-- <text class="page-title">领取福利：</text> -->
     <!--    福利列表-->
     <view class="benefit-group">
-        <block tt:for="{{list}}">
+        <!-- <block tt:for="{{list}}">
             <view class="benefit-item">
                 <image src='/images/benefit.png' mode='widthFix'></image>
                 <text>{{item.name}}</text>
             </view>
-        </block>
+        </block> -->
+        <rich-text nodes="{{detail.content}}"> </rich-text>
     </view>
 </scroll-view>
