@@ -2,14 +2,11 @@
     <button class="pre-button" disabled="{{currentPage === 1}}" bindtap="onPrevPage">
         <text class="cuIcon-back lg"></text>
     </button>
-    <view class="page-numbers">
-        <block tt:for="{{pageNumbers}}" tt:key="index">
-            <button class="{{item === currentPage ? 'active' : ''}}" bindtap="onPageNumberTap" data-page="{{item}}">
-                {{item}}
-            </button>
-        </block>
+    <view class="input-container">
+        <input class="ttui-input" type="number" bindinput="bindKeyInput" value="{{pageNum}}" />
+        <text>/{{totalPage}}</text>
     </view>
-    <button class="next-button" disabled="{{currentPage === total}}" bindtap="onNextPage">
+    <button class="next-button" disabled="{{currentPage === totalPage}}" bindtap="onNextPage">
         <text class="cuIcon-right lg"></text>
     </button>
 </view>
