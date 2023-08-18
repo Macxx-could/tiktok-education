@@ -6,9 +6,10 @@
             bindtransition="transition">
             <block tt:for="{{resultFeedback}}">
                 <swiper-item class="swiper-item">
-                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
-                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
-                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
+                    <block tt:for="{{item}}" tt:for-item="imgItem">
+                        <image src='{{imgItem.banner}}' mode='heightFix' class='certificate'>
+                        </image>
+                    </block>
                 </swiper-item>
             </block>
         </swiper>
@@ -20,9 +21,10 @@
             bindtransition="transition">
             <block tt:for="{{experience}}">
                 <swiper-item class="swiper-item">
-                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
-                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
-                    <image src='/images/chat_screenshot.png' mode='heightFix' class='certificate'></image>
+                    <block tt:for="{{item}}" tt:for-item="imgItem">
+                        <image src='{{imgItem.banner}}' mode='heightFix' class='certificate'>
+                        </image>
+                    </block>
                 </swiper-item>
             </block>
         </swiper>
@@ -34,14 +36,12 @@
             bindtransition="transition">
             <block tt:for="{{groupPhoto}}">
                 <swiper-item class="swiper-item group-photo">
-                    <view class="photo-box">
-                        <image src='/images/group_photo_03.png' mode='widthFix'></image>
-                        <text>xxx届毕业照</text>
-                    </view>
-                    <view class="photo-box">
-                        <image src='/images/group_photo_05.png' mode='widthFix'></image>
-                        <text>xxx届毕业照</text>
-                    </view>
+                    <block tt:for="{{item}}" tt:for-item="imgItem">
+                        <view class="photo-box">
+                            <image src='{{imgItem.banner}}' mode='widthFix'></image>
+                            <text class="photo-title">{{imgItem.title}}</text>
+                        </view>
+                    </block>
                 </swiper-item>
             </block>
         </swiper>
@@ -50,8 +50,9 @@
     <view class="grid-container">
         <block tt:for="{{performanceShow}}">
             <view class="grid-item">
-                <image src='/images/video-cover-03.png' mode='widthFix' class="grid-image"></image>
-                <text>{{item.title}}</text>
+                <!-- <image src='/images/video-cover-03.png' mode='widthFix' class="grid-image"></image> -->
+                <video src='{{item.banner}}' mode='widthFix' class='grid-image'></video>
+                <text class="grid-item__title">{{item.title}}</text>
             </view>
         </block>
     </view>

@@ -11,11 +11,7 @@ Page({
     // 企业荣誉
     honor: [],
     // 校园环境
-    environment: [
-      { name: "广东校区环境", img: "study_env_01" },
-      { name: "中山东区校区环境", img: "study_env_02" },
-      { name: "中山南区校区环境", img: "study_env_03" },
-    ],
+    environment: [],
   },
 
   /**

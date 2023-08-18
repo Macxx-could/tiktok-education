@@ -2,12 +2,14 @@
   padding: 30rpx;
   padding-bottom: 60rpx;
 }
+
 .block-title {
   font-size: 30rpx;
   font-weight: bold;
   margin-bottom: 25rpx;
   margin-top: 45rpx;
 }
+
 .first-node {
   margin-top: 0;
 }
@@ -20,20 +22,46 @@
 .certificate {
   margin: 0 auto;
 }
+
 .page-section {
   margin-bottom: 60rpx;
 }
+
 .group-photo {
   justify-content: space-between;
   height: 200px;
 }
-.group-photo > .photo-box {
-  flex: 1;
+
+.group-photo>.photo-box {
+  width: 320rpx;
+  flex-shrink: 0;
   margin: 0 10rpx;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+}
+
+.group-photo>.photo-box>.photo-title {
+  text-align: center;
+  width: 220rpx;
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 超出部分隐藏 */
+  text-overflow: ellipsis;
+  /* 使用省略号表示截断 */
+}
+
+.grid-item__title {
+  text-align: center;
+  width: 220rpx;
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 超出部分隐藏 */
+  text-overflow: ellipsis;
+  /* 使用省略号表示截断 */
 }
 
 .grid-container {
@@ -44,12 +72,14 @@
   align-items: center;
   justify-items: center;
 }
+
 .grid-item {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
+
 .grid-image {
   width: 320rpx;
   margin-bottom: 10rpx;
