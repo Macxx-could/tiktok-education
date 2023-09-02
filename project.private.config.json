@@ -1,7 +1,7 @@
 {
     "condition": {
         "miniprogram": {
-            "current": 1692359852880,
+            "current": -1,
             "list": [
                 {
                     "id": 1692359852880,
@@ -11,8 +11,7 @@
                     "scene": "990001",
                     "launchFrom": "scan",
                     "location": "qr_code",
-                    "mockUpdateType": "Noupdate",
-                    "addType": "manual"
+                    "mockUpdateType": "Noupdate"
                 },
                 {
                     "id": 1692337973143,

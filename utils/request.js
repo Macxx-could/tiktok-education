@@ -1,6 +1,6 @@
 function request(url, method, data, config = {}) {
     // 请求头
-    const baseUrl = 'http://159.75.37.49:8602/interface/dy/web'
+    const baseUrl = 'https://www.01designteam.cn/interface/dy/web'
     // 拼接请求地址
     url = `${baseUrl}${url}`
     // 获取请求方法 - 默认是get请求

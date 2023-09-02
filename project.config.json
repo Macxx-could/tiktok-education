@@ -1,1 +1,13 @@
-{"setting":{"urlCheck":true,"es6":true,"postcss":true,"minified":true,"newFeature":true,"autoCompile":true},"appid":"ttf78e813368b2eba301","projectname":"tiktok-education","douyinProjectType":"native"}
+{
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "autoCompile": true
+    },
+    "appid": "tt5d6b2bd6c256672d01",
+    "projectname": "tiktok-education",
+    "douyinProjectType": "native"
+}

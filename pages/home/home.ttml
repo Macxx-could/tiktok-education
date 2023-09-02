@@ -3,7 +3,7 @@
     <view class="page-section">
         <swiper easing-function="default" indicator-dots current="{{0}}" current-item-id="" previous-margin=""
             next-margin="" display-multiple-items="{{1}}" autoplay interval="{{3000}}" circular duration="{{500}}"
-            bindanimationfinish="animationFinish" bindtransition="transition">
+        >
             <block tt:for="{{bannerList}}">
                 <swiper-item class="swiper-item">
                     <image src="{{item.bannerUrl}}" mode='heightFix' class='header-banner'></image>
