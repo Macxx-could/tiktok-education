@@ -12,7 +12,6 @@ Component({
   // 生命周期
   lifetimes: {
     attached() {
-      console.log('xxx')
       const {
         userInfo
       } = app.globalData
@@ -24,5 +23,25 @@ Component({
   /**
    * 组件的方法列表
    */
-  methods: {}
+  methods: {
+    handleIm(e) {
+      console.log(e);
+      if (!e.detail.errNo) {
+        this.setData({
+          result: e.detail.errMsg,
+        });
+        tt.showToast({
+          title: "success",
+        });
+      } else {
+        this.setData({
+          result: e.detail.errMsg,
+        });
+        tt.showToast({
+          title: this.data.result,
+          icon: "none",
+        });
+      }
+    },
+  }
 });

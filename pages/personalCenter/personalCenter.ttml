@@ -7,10 +7,12 @@
     </view>
     <view class="neck-group">
         <view class="neck-item">
-            <view class="neck-item__left">
+            <button class="neck-item__left" open-type="im" data-im-id="xxx" bindim="handleIm" binderror="handleIm">
                 <image src='/images/customer-icon.png' mode='widthFix' class='customer-icon'></image>
                 <text class="left-desc-text">客服入口</text>
-            </view>
+            </button>
+            <!-- <view class="neck-item__left">
+            </view> -->
             <text class="cuIcon-right lg text-gray"></text>
         </view>
     </view>
