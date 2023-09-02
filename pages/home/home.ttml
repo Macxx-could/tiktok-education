@@ -1,4 +1,5 @@
 <scroll-view scroll-y class="scrollPage home-page">
+    <!-- <button bindtap="handleGetUserProfile">获取用户信息</button> -->
     <!--Banner图区域(轮播)-->
     <view class="page-section">
         <swiper easing-function="default" indicator-dots current="{{0}}" current-item-id="" previous-margin=""

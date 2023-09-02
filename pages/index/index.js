@@ -1,16 +1,19 @@
 const app = getApp();
-
+const {
+    getUserProfile,
+    setUserProfile
+} = require('../../utils/user.js')
 Page({
     data: {
         PageCur: '首页'
     },
     NavChange(e) {
-        const pageCUr = e.currentTarget.dataset.cur
-        if(pageCUr === '个人中心'){
-            // 判断用户是否进行了登录
+        const pageCur = e.currentTarget.dataset.cur;
+        if (pageCur === '个人中心' && !app.globalData.hasProfile) {
+            getUserProfile().then(res => setUserProfile(res));
         }
         this.setData({
-            PageCur: pageCUr
+            PageCur: pageCur
         });
     },
     onLoad: function (options) {},

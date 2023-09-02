@@ -1,5 +1,7 @@
+const app = getApp()
 /**
- * 用户登录
+ * 调用tt.login接口进行登录
+ * tt.getUserProfile内置了tt.login
  */
 function login() {
     return new Promise((resolve, reject) => {
@@ -40,9 +42,38 @@ function login() {
     })
 }
 
-function getUserProfile() {}
+/**
+ * 通过tt.getUserProfile获取用户数据
+ */
+function getUserProfile() {
+    return new Promise((resolve, reject) => {
+        tt.getUserProfile({
+            force: true, // 用户未登录时，强制登录
+            success: (res) => {
+                resolve(res)
+            },
+            fail: (res) => {
+                reject(res)
+            },
+        });
+    })
+}
+
+/**
+ * 将用户数据存放到全局变量中
+ * @param {object} data 
+ */
+function setUserProfile(data) {
+    app.globalData.userProfile = data
+    const {
+        userInfo
+    } = data
+    app.globalData.userInfo = userInfo
+    app.globalData.hasProfile = true
+}
 
 module.exports = {
     login,
-    getUserProfile
+    getUserProfile,
+    setUserProfile
 }
