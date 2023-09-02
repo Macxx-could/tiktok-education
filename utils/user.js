@@ -64,6 +64,7 @@ function getUserProfile() {
  * @param {object} data 
  */
 function setUserProfile(data) {
+    console.log(data)
     app.globalData.userProfile = data
     const {
         userInfo

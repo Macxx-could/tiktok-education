@@ -1,8 +1,8 @@
 <view class="personal-center-page">
     <view class="header">
-        <image src='/images/headPortrait.png' mode='widthFix' class='head-portrait'></image>
+        <image src='{{user.avatarUrl}}' mode='widthFix' class='head-portrait'></image>
         <view class="person-base-info">
-            <text class="nick-name">100年码农</text>
+            <text class="nick-name">{{user.nickName}}</text>
         </view>
     </view>
     <view class="neck-group">

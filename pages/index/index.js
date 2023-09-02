@@ -10,11 +10,18 @@ Page({
     NavChange(e) {
         const pageCur = e.currentTarget.dataset.cur;
         if (pageCur === '个人中心' && !app.globalData.hasProfile) {
-            getUserProfile().then(res => setUserProfile(res));
+            getUserProfile().then(res => {
+                setUserProfile(res)
+                this.setData({
+                    PageCur: pageCur
+                });
+            });
+        } else {
+            this.setData({
+                PageCur: pageCur
+            });
         }
-        this.setData({
-            PageCur: pageCur
-        });
+
     },
     onLoad: function (options) {},
     onShareAppMessage(option) {
