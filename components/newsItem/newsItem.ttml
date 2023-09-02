@@ -1,7 +1,7 @@
 <view class="news-item" bindtap="clickNewsItem" data-id="{{item.id}}">
     <view class="news-image-container">
-        <image tt:if="{{!item.banner}}" src='/images/t1.jpg' mode='widthFix' class="news-image"></image>
-        <image tt:else src="{{item.banner}}" class="news-image" mode='widthFix'></image>
+        <image tt:if="{{!item.banner}}" src='/images/t1.jpg' mode='scaleToFill' class="news-image"></image>
+        <image tt:else src="{{item.banner}}" class="news-image" mode='scaleToFill'></image>
     </view>
     <view class="news-content-container">
         <view class="news-title text-cut" style="width: 400rpx;">{{item.title}}</view>
