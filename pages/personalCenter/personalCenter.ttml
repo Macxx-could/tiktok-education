@@ -7,7 +7,7 @@
     </view>
     <view class="neck-group">
         <view class="neck-item">
-            <button class="neck-item__left" open-type="im" data-im-id="xxx" bindim="handleIm" binderror="handleIm">
+            <button class="neck-item__left" open-type="im" data-im-id="01JY666" bindim="handleIm" binderror="handleIm">
                 <image src='/images/customer-icon.png' mode='widthFix' class='customer-icon'></image>
                 <text class="left-desc-text">客服入口</text>
             </button>
