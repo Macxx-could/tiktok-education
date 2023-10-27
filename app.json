@@ -14,7 +14,8 @@
         "pages/environmentalDetails/environmentalDetails",
         "pages/industryProspects/industryProspects",
         "pages/industryOutlookList/industryOutlookList",
-        "pages/industryProspectDetails/industryProspectDetails"
+        "pages/industryProspectDetails/industryProspectDetails",
+        "pages/activeList/activeList"
     ],
     "window": {
         "backgroundTextStyle": "light",

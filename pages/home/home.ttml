@@ -20,7 +20,7 @@
     <!--  学员/员工日常活动  -->
     <containerBlock title="学员/员工日常活动">
         <view class="activity-group">
-            <activityItem tt:for="{{activities}}" img="{{item.banner}}" name="{{item.title}}"></activityItem>
+            <activityItem tt:for="{{activities}}" img="{{item.banner}}" name="{{item.title}}" item="{{item}}"></activityItem>
         </view>
     </containerBlock>
     <!--    公司对外合作动态/新闻-->

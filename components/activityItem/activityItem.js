@@ -7,9 +7,13 @@ Component({
             value: "t1"
         },
         // 活动名称
-        name:{
-            type:String,
-            value:""
+        name: {
+            type: String,
+            value: ""
+        },
+        item: {
+            type: Object,
+            value: {}
         }
     },
     /**
@@ -20,5 +24,19 @@ Component({
     /**
      * 组件的方法列表
      */
-    methods: {}
+    methods: {
+        clickItem(e) {
+            const {
+                currentTarget: {
+                    dataset: {
+                        id
+                    }
+                }
+            } = e
+            const url = `/pages/newsContent/newsContent?id=${id}`
+            tt.navigateTo({
+                url
+            })
+        }
+    }
 })

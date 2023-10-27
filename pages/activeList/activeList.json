@@ -1,0 +1,10 @@
+{
+    "backgroundColor": "#ffffff",
+    "backgroundColorTop": "#ffffff",
+    "backgroundColorBottom": "#ffffff",
+    "navigationBarTitleText": "学员/员工日常活动",
+    "usingComponents": {
+      "newsItem": "/components/newsItem/newsItem",
+      "pagination": "/components/pagination/pagination"
+    }
+  }

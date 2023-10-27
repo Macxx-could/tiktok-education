@@ -10,7 +10,7 @@ Component({
     lifetimes: {
         attached() {
             this.setData({
-                hideMore:  ['学员/员工日常活动', '创始人故事/品牌故事'].includes(this.data.title)
+                hideMore: ['创始人故事/品牌故事'].includes(this.data.title)
             })
         }
     },
@@ -37,7 +37,7 @@ Component({
             } = e
             // 路径映射
             const urlMap = {
-                ['学员/员工日常活动']: "/pages/newsList/newsList",
+                ['学员/员工日常活动']: "/pages/activeList/activeList",
                 ['公司对外合作动态/新闻']: "/pages/newsList/newsList",
                 ['行业前景确认']: "/pages/industryProspects/industryProspects",
                 ['创始人故事/品牌故事']: "/pages/newsList/newsList",

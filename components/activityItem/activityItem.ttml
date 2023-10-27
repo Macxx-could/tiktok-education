@@ -1,4 +1,4 @@
-<view class="activity-item">
+<view class="activity-item" bindtap="clickItem" data-id="{{item.id}}">
     <image tt:if="{{!img}}" src='/images/t1.jpg' mode='scaleToFill' class="activity-img"></image>
     <image tt:else src='{{img}}' mode='scaleToFill' class="activity-img"></image>
     <text class="activity-name">{{name}}</text>

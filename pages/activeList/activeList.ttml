@@ -1,0 +1,9 @@
+<scroll-view scroll-y class="scrollPage news-list">
+    <view class="news-group">
+        <newsItem tt:for="{{news}}" item="{{item}}"></newsItem>
+    </view>
+</scroll-view>
+<view class="pagination-container">
+    <pagination currentPage="{{currentPage}}" total="{{total}}" pageSize="{{pageSize}}"
+        bind:pageChange="handlePageChange"></pagination>
+</view>
