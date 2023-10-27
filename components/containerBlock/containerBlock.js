@@ -7,11 +7,19 @@ Component({
             value: ""
         }
     },
+    lifetimes: {
+        attached() {
+            this.setData({
+                hideMore:  ['学员/员工日常活动', '创始人故事/品牌故事'].includes(this.data.title)
+            })
+        }
+    },
     /**
      * 组件的初始数据
      */
-    data: {},
-
+    data: {
+        hideMore: false
+    },
     /**
      * 组件的方法列表
      */
@@ -20,7 +28,13 @@ Component({
          * 更多文字点击事件
          */
         clickMoreText(e) {
-            const {currentTarget: {dataset: {title}}} = e
+            const {
+                currentTarget: {
+                    dataset: {
+                        title
+                    }
+                }
+            } = e
             // 路径映射
             const urlMap = {
                 ['学员/员工日常活动']: "/pages/newsList/newsList",
@@ -29,7 +43,9 @@ Component({
                 ['创始人故事/品牌故事']: "/pages/newsList/newsList",
             }
             const url = urlMap[title] || "/pages/home/home"
-            tt.navigateTo({url})
+            tt.navigateTo({
+                url
+            })
         }
     }
 })

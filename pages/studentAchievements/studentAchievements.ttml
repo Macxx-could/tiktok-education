@@ -2,8 +2,7 @@
     <view class="block-title first-node">就业结果反馈</view>
     <view class="page-section">
         <swiper easing-function="default" indicator-dots current="{{0}}" display-multiple-items="{{1}}" autoplay
-            interval="{{2000}}" circular duration="{{500}}" bindanimationfinish="animationFinish"
-            bindtransition="transition">
+            interval="{{2000}}" circular duration="{{500}}">
             <block tt:for="{{resultFeedback}}">
                 <swiper-item class="swiper-item">
                     <block tt:for="{{item}}" tt:for-item="imgItem">
@@ -17,8 +16,7 @@
     <view class="block-title first-node">学员心得体会</view>
     <view class="page-section">
         <swiper easing-function="default" indicator-dots current="{{0}}" display-multiple-items="{{1}}" autoplay
-            interval="{{2000}}" circular duration="{{500}}" bindanimationfinish="animationFinish"
-            bindtransition="transition">
+            interval="{{2000}}" circular duration="{{500}}">
             <block tt:for="{{experience}}">
                 <swiper-item class="swiper-item">
                     <block tt:for="{{item}}" tt:for-item="imgItem">
@@ -32,8 +30,7 @@
     <view class="block-title first-node">学员毕业合照</view>
     <view class="page-section">
         <swiper easing-function="default" indicator-dots current="{{0}}" display-multiple-items="{{1}}" autoplay
-            interval="{{2000}}" circular duration="{{500}}" bindanimationfinish="animationFinish"
-            bindtransition="transition">
+            interval="{{2000}}" circular duration="{{500}}">
             <block tt:for="{{groupPhoto}}">
                 <swiper-item class="swiper-item group-photo">
                     <block tt:for="{{item}}" tt:for-item="imgItem">

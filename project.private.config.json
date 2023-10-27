@@ -4,49 +4,19 @@
             "current": -1,
             "list": [
                 {
-                    "id": 1692359852880,
+                    "id": 1693834310862,
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "name=mac&age=18",
+                    "scene": "021014",
+                    "launchFrom": "publish_anchor_point",
+                    "location": "recently",
+                    "mockUpdateType": "Noupdate"
+                },
+                {
+                    "id": 1694784357807,
                     "name": "pages/companiesToIntroduce/companiesToIntroduce",
                     "pathName": "pages/companiesToIntroduce/companiesToIntroduce",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1692337973143,
-                    "name": "pages/studentAchievements/studentAchievements",
-                    "pathName": "pages/studentAchievements/studentAchievements",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1692341447841,
-                    "name": "pages/newsList/newsList",
-                    "pathName": "pages/newsList/newsList",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1692344216962,
-                    "name": "pages/industryProspects/industryProspects",
-                    "pathName": "pages/industryProspects/industryProspects",
-                    "query": "",
-                    "scene": "990001",
-                    "launchFrom": "scan",
-                    "location": "qr_code",
-                    "mockUpdateType": "Noupdate"
-                },
-                {
-                    "id": 1692347077295,
-                    "name": "pages/environmentList/environmentList",
-                    "pathName": "pages/environmentList/environmentList",
                     "query": "",
                     "scene": "990001",
                     "launchFrom": "scan",

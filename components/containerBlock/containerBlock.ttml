@@ -2,7 +2,8 @@
 <view class="container-block">
     <view class="container-header">
         <text class="title">{{title}}</text>
-        <text tt:if="{{title!=='创始人故事/品牌故事'}}" class="more-text text-gray" data-title="{{title}}" bindtap="clickMoreText">
+        <text hidden="{{hideMore}}" class="more-text text-gray" data-title="{{title}}"
+            bindtap="clickMoreText">
             <text>更多</text>
             <text class="cuIcon-right lg "></text>
         </text>
