@@ -188,4 +188,15 @@ Page({
       url
     });
   },
+  // 视频播放事件
+  onVideoPlay(e) {
+    const {
+      target: {
+        id
+      }
+    } = e
+    const video = tt.createVideoContext(id)
+    // 进入全屏
+    video.requestFullScreen()
+  }
 });

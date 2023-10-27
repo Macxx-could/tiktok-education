@@ -3,7 +3,8 @@
     <view class="video-group">
         <view class="video-item" tt:for="{{videoList}}">
             <!-- <image src='/images/video-cover-03.png' mode='widthFix' class='video-cover'></image> -->
-            <video src='{{item.banner}}' mode='widthFix' class='video-cover'></video>
+            <video id="{{'video-'+index}}" src='{{item.banner}}' mode='widthFix' class='video-cover' show-fullscreen-btn
+                bindplay="onVideoPlay"></video>
             <text class="video-title">{{item.title}}</text>
         </view>
     </view>
