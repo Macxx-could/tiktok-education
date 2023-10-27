@@ -190,13 +190,8 @@ Page({
   },
   // 视频播放事件
   onVideoPlay(e) {
-    const {
-      target: {
-        id
-      }
-    } = e
-    const video = tt.createVideoContext(id)
-    // 进入全屏
-    video.requestFullScreen()
+    const { target: { id } } = e // 获取元素id
+    const video = tt.createVideoContext(id) // 创建实例
+    video.requestFullScreen()  // 进入全屏
   }
 });

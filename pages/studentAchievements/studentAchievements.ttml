@@ -48,7 +48,7 @@
         <block tt:for="{{performanceShow}}">
             <view class="grid-item">
                 <!-- <image src='/images/video-cover-03.png' mode='widthFix' class="grid-image"></image> -->
-                <video src='{{item.banner}}' mode='widthFix' class='grid-image'></video>
+                <video id="{{'video-'+index}}" src='{{item.banner}}' mode='widthFix' class='grid-image' bindplay="onVideoPlay"></video>
                 <text class="grid-item__title">{{item.title}}</text>
             </view>
         </block>
