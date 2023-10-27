@@ -21,6 +21,7 @@ Component({
     methods: {
         clickItem() {
             const key = this.data.text
+            if(key === '线上课程') return
             const urlMap = {
                 ['企业介绍']: "/pages/companiesToIntroduce/companiesToIntroduce",
                 ['课程介绍']: "/pages/courseIntroduction/courseIntroduction",
